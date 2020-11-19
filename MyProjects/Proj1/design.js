@@ -4,6 +4,10 @@ document.getElementById("btn").addEventListener("click", greeting);
 
 function alerttt() {
 
+  // Input
+
+  var name = prompt("What's your name?");
+
   // Link
 
   const link = document.createElement('Link');
@@ -13,15 +17,12 @@ function alerttt() {
   link.href = "https://www.youtube.com/watch?v=DL zxrzFCyOs";
   document.body.appendChild(link);
 
-  // Input
-
-  var name = prompt("What's your name?");
-
   // Display
 
   const message = 'Hello ' + name + ' Please press on this ' + link;
 
   // Output
+
   document.getElementById("alerttt").innerHTML = message;
   alert(message);
 }
