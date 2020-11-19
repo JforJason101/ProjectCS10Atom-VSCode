@@ -5,13 +5,13 @@ document.getElementById("btn").addEventListener("click", greeting);
 function alerttt() {
 
   // Input
-
-  var name = prompt("What's your name?");
+  let thing - document.getElementById('')
+  let name = prompt("What's your name?");
 
   // Link
 
   const link = document.createElement('Link');
-  var linkText = document.createTextNode("link");
+  let linkText = document.createTextNode("link");
   link.appendChild(linkText);
   link.title = "link";
   link.href = "https://www.youtube.com/watch?v=DL zxrzFCyOs";
@@ -19,7 +19,7 @@ function alerttt() {
 
   // Display
 
-  const message = 'Hello ' + name + ' Please press on this ' + link;
+  const message = 'Hello ' + name + '! Please press on this ' + link;
 
   // Output
 
@@ -28,15 +28,15 @@ function alerttt() {
 }
 
 /* We can then select these HTML IDs (in the quotations)
-and store references to them in variables like so */
+and store references to them in letiables like so */
 const quizContain = document.getElementById('quizhold');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 /* We can then select these HTML IDs (in the quotations)
-and store references to them in variables like so */
+and store references to them in letiables like so */
 
 function theQuiz() {
-  // Var. to store the quiz of course
+  // let. to store the quiz of course
   const Output[];
 }
 
