@@ -7,7 +7,7 @@ function alerttt() {
   // Input
   let thing - document.getElementById('')
   let name = prompt("What's your name?");
-
+ 
   // Link
 
   const link = document.createElement('Link');
