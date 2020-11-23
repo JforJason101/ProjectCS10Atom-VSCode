@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>The BMI Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <body>
+    <div id="calcContainer">
+      <h1 id="theHeading">Calculate Your BMI!</h1>
+      <br>
+      <form id="form" action="index.html" method="post">
+        <div id="mainContainer">
+          <section>
+            <h4>(cm) How tall are you?<h4>
+                <input id="heightInput">
+          </section>
+          <section>
+            <h4>(KG) How much do you weigh?
+            You can put in a specific amount (EG: 67.17kg)</h4>
+            <input id="weightInput">
+            <!--maybe add a value-->
+          </section>
+        </div>
+
+        <div>
+          <button type="button" id="submitInputValues">Calculate!</button>
+        </div>
+      </form>
+      <div id="resultContainer">
+        <div id="answer"></div>
+      </div>
+      <div>
+        <div id="output"></div>
+      </div>
+    </div>
+    <script src="BMIBACK.js"></script>
+  </body>
+</html>
