@@ -38,6 +38,11 @@ theQs.forEach( (currentQ, QNumber) => {
 
 function displayResults() {
 
+
+  // Input
+  let thing - document.getElementById('')
+  let name = prompt("What's your name?");
+
   // grab the answer container
   const answerContainers = quizContainer.querySelectorAll('.answer');
 
