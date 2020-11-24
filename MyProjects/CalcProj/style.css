@@ -43,3 +43,8 @@ body {
 #in {
     text-align: center;
 }
+
+#heightInput {
+    border: none;
+    background-color: #3CBC8D;
+}
