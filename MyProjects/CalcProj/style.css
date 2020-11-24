@@ -1,10 +1,12 @@
 @font-face {
-    font-family: 'Moon 2.0 Light';
-    font-style: normal;
-    font-weight: normal;
     src: local('Moon 2.0 Light'), url('http://127.0.0.1:5500/CalcProj/MoonFont/Moon2.0-Light.woff') format('woff');
     font-family: 'Integral CF UltraBold';
     src: local('Integral CF UltraBold'), url('http://127.0.0.1:5500/IntegralFont/Webfont/IntegralCF-Heavy.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Wavehaus Light';
+    src: local('Wavehaus Light'), url('http://127.0.0.1:5500/WavehausSansFont/Web%20Font/Wavehaus-42Light.woff') format('woff');
 }
 
 body {
@@ -16,7 +18,7 @@ body {
     border: 0px;
     margin: 0%;
     background-image: url('http://127.0.0.1:5500/images/mobile_wallpaper_by_maria_shanina-min.png');
-    height: 950px;
+    height: 900px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,4 +32,14 @@ body {
     font-size: 75px;
     text-align: center;
     padding-top: 418px;
+}
+
+#howTall {
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Wavehaus Light';
+}
+
+#in {
+    text-align: center;
 }
