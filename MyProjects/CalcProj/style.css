@@ -3,6 +3,10 @@
     font-style: normal;
     font-weight: normal;
     src: local('Moon 2.0 Light'), url('http://127.0.0.1:5500/CalcProj/MoonFont/Moon2.0-Light.woff') format('woff');
+    font-family: 'Integral CF UltraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Integral CF UltraBold'), url('http://127.0.0.1:5500/IntegralFont/Webfont/IntegralCF-Heavy.eot')
 }
 
 #theHeading {
@@ -12,7 +16,7 @@
 }
 
 #theHeading2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Integral CF UltraBold', sans-serif;
     font-size: 50px;
     text-align: center;
 }
