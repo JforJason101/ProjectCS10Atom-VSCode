@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'cleonlight';
-    src: url('cleon-light-webfont.woff2') format('woff2'), url('cleon-light-webfont.woff') format('woff');
-    font-weight: lighter;
+    font-family: 'Moon 2.0 Light';
     font-style: normal;
+    font-weight: normal;
+    src: local('Moon 2.0 Light'), url('http://127.0.0.1:5500/CalcProj/MoonFont/Moon2.0-Light.woff') format('woff');
 }
 
 #theHeading {
-    font-family: 'cleonlight', sans-serif;
+    font-family: 'Moon 2.0 Light', sans-serif;
     font-size: 50px;
     text-align: center;
 }
