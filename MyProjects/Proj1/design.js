@@ -80,7 +80,7 @@ function displayResults() {
   else {
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
   }
-}
+} 
 
   // Link
 
@@ -105,7 +105,7 @@ const submitButton = document.getElementById('submit');
 const launchlast = document.getElementById('lastquestion').value;
 const theQs = [
 {
-  question: "Who is Karl Marx?"
+  question: "Who is Karl Marx?",
   answers: {
     a: "Godfather of Capitalism",
     b: "Santa Claus's father",
@@ -116,10 +116,10 @@ const theQs = [
 },
 
 {
-  question: italics("TASK:")
-  "Say 'hi' to juan."
-  const img = document.createElement('img')
-  img.src = 'https://i.kym-cdn.com/entries/icons/mobile/000/035/644/juancover.jpg'
+  question: "TASK: Say 'hi' to juan.",
+  // EDIT LATER
+  // const img = document.createElement('img'),
+  // img.src = 'https://i.kym-cdn.com/entries/icons/mobile/000/035/644/juancover.jpg',
   answers: {
     a: italics("y e s"),
     b: italics("N O")
@@ -128,7 +128,7 @@ const theQs = [
 },
 
 {
-  question: "What is socialism?"
+  question: "What is socialism?",
   answers: {
     a: "When the gubberment does stuff",
     b: "When capitalism",
