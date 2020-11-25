@@ -1,10 +1,13 @@
+/* variables */
 :root {
 	--primary: #11998e;
 	--secondary: #38ef7d;
 	--white: #fff;
 	--gray: #9b9b9b;
 }
+/* variables */
 
+/* fonts */
 @font-face {
 	src: local("Moon 2.0 Light"),
 		url("http://127.0.0.1:5500/CalcProj/MoonFont/Moon2.0-Light.woff")
@@ -21,7 +24,9 @@
 		url("http://127.0.0.1:5500/WavehausSansFont/Web%20Font/Wavehaus-28Thin.woff")
 			format("woff");
 }
+/* fonts */
 
+/* Parallax */
 html {
 	height: 100%;
 	overflow: hidden;
@@ -70,12 +75,14 @@ header::before {
 	z-index: -1;
 	min-height: 100vh;
 }
+/* Parallax */
 
+/* Text Formatting and The Input Box*/
 #theHeading {
 	color: #d4c3ae;
 	border: 0px;
 	font-family: "Integral CF UltraBold", sans-serif;
-	font-size: 75px;
+	font-size: 90px;
 	text-align: center;
 	margin: 0;
 	padding: 1em 0;
@@ -83,9 +90,11 @@ header::before {
 
 #howTall {
 	text-align: center;
-	font-size: xx-large;
-	font-family: "Wavehaus Thin";
+	font-size: 60px;
+	font-family: "Integral CF UltraBold";
+	color: #fcfbf5;
 }
+
 /*The input ting*/
 
 #in {
@@ -97,7 +106,7 @@ header::before {
 }
 
 #heightInput {
-	font-family: inherit;
+	font-family: "Wavehaus Thin";
 	width: 100%;
 	border: 0;
 	border-bottom: 2px solid var(--gray);
@@ -107,4 +116,44 @@ header::before {
 	padding: 7px 0;
 	background: transparent;
 	transition: border-color 0.2s;
+}
+#heightInput::placeholder {
+	color: transparent;
+}
+
+#heightInput:placeholder-shown ~ .form__label {
+	font-size: 1.3rem;
+	cursor: text;
+	top: 20px;
+}
+.form__label {
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: 0.2s;
+	font-size: 1rem;
+	color: var(--gray);
+}
+#heightInput:focus {
+	padding-bottom: 6px;
+	font-weight: 700;
+	border-width: 3px;
+	border-image: linear-gradient(to right, var(--primary), var(--secondary));
+	border-image-slice: 1;
+}
+#heightInput:focus ~ .form__label {
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: 0.2s;
+	font-size: 1rem;
+	color: var(--primary);
+	font-weight: 700;
+}
+/* Text Formatting and The Input Box*/
+#heightInput {
+	&:required,
+	&:invalid {
+		box-shadow: none;
+	}
 }
