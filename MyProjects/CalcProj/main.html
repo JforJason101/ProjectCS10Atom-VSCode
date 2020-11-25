@@ -7,31 +7,31 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
 
 <body>
-    <div id="calcContainer">
-        <section id="parallax">
+    <header>
+        <div id="calcContainer">
             <h1 id="theHeading">CALCULATE YOUR BMI</h1>
-        </section>
-        <br>
-        <form id="form" action="index.html" method="post">
-            <div id="mainContainer">
-                <section>
-                    <h4 id="howTall">(cm) How tall are you?
-                        <h4>
-                            <div id="in"><input id="heightInput"></div>
+            <br>
+            <form id="form" action="index.html" method="post">
+                <div id="mainContainer">
+                    <section>
+                        <h4 id="howTall">(cm) How tall are you?
+                            <h4>
+                                <div id="in"><input id="heightInput" placeholder="Name" name="name" required/>
+                                    <label for="name" class="form__label">Name</label>
+                                </div>
+                </div>
                 </section>
                 <section>
                     <h4>(KG) How much do you weigh? You can put in a specific amount (EG: 67.17kg)</h4>
                     <input id="weightInput">
-                    <!--maybe add a value-->
                 </section>
-            </div>
+        </div>
 
-            <div>
-                <button type="button" id="submitInputValues">Calculate!</button>
-            </div>
+        <div>
+            <button type="button" id="submitInputValues">Calculate!</button>
+        </div>
         </form>
         <div id="resultContainer">
             <div id="answer"></div>
@@ -39,8 +39,9 @@
         <div>
             <div id="output"></div>
         </div>
-    </div>
-    <script src="BMIBACK.js"></script>
+        </div>
+        <script src="BMIBACK.js"></script>
+    </header>
 </body>
 
 </html>

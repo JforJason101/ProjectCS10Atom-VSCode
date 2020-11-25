@@ -1,50 +1,104 @@
-@font-face {
-    src: local('Moon 2.0 Light'), url('http://127.0.0.1:5500/CalcProj/MoonFont/Moon2.0-Light.woff') format('woff');
-    font-family: 'Integral CF UltraBold';
-    src: local('Integral CF UltraBold'), url('http://127.0.0.1:5500/IntegralFont/Webfont/IntegralCF-Heavy.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Wavehaus Light';
-    src: local('Wavehaus Light'), url('http://127.0.0.1:5500/WavehausSansFont/Web%20Font/Wavehaus-42Light.woff') format('woff');
-}
-
-body {
-    border: 0px;
-    margin: 0%;
-}
-
-#parallax {
-    border: 0px;
-    margin: 0%;
-    background-image: url('http://127.0.0.1:5500/images/mobile_wallpaper_by_maria_shanina-min.png');
-    height: 900px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#theHeading {
-    border: 0px;
-    margin: 0%;
-    font-family: 'Integral CF UltraBold', sans-serif;
-    font-size: 75px;
-    text-align: center;
-    padding-top: 418px;
-}
-
-#howTall {
-    text-align: center;
-    font-size: xx-large;
-    font-family: 'Wavehaus Light';
-}
-
-#in {
-    text-align: center;
-}
-
-#heightInput {
-    border: none;
-    background-color: #3CBC8D;
-}
+                 :root {
+                    --primary: #11998e;
+                    --secondary: #38ef7d;
+                    --white: #fff;
+                    --gray: #9b9b9b;
+                }
+                
+                @font-face {
+                    src: local('Moon 2.0 Light'), url('http://127.0.0.1:5500/CalcProj/MoonFont/Moon2.0-Light.woff') format('woff');
+                    font-family: 'Integral CF UltraBold';
+                    src: local('Integral CF UltraBold'), url('http://127.0.0.1:5500/IntegralFont/Webfont/IntegralCF-Heavy.woff') format('woff');
+                }
+                
+                @font-face {
+                    font-family: 'Wavehaus Thin';
+                    src: local('Wavehaus Thin'), url('http://127.0.0.1:5500/WavehausSansFont/Web%20Font/Wavehaus-28Thin.woff') format('woff');
+                }
+                
+                html {
+                    height: 100%;
+                    overflow: hidden;
+                }
+                
+                body {
+                    margin: 0%;
+                    padding: 0%;
+                    perspective: 1px;
+                    transform-style: preserve-3d;
+                    height: 100%;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                }
+                
+                header {
+                    box-sizing: border-box;
+                    min-height: 100vh;
+                    padding: 30vw 0 5vw;
+                    position: relative;
+                    transform-style: inherit;
+                    width: 100vw;
+                }
+                
+                header #theHeading {
+                    margin-top: -100px;
+                }
+                
+                header,
+                header:before {
+                    background: 50% 50% / cover;
+                }
+                
+                header::before {
+                    bottom: 0;
+                    content: "";
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    display: block;
+                    background-image: url('http://127.0.0.1:5500/images/nick-hillier-yD5rv8_WzxA-unsplash.jpg');
+                    background-size: cover;
+                    transform-origin: center center 0;
+                    transform: translateZ(-1px) scale(2);
+                    z-index: -1;
+                    min-height: 100vh;
+                }
+                
+                #theHeading {
+                    color: #D4C3AE;
+                    border: 0px;
+                    font-family: 'Integral CF UltraBold', sans-serif;
+                    font-size: 75px;
+                    text-align: center;
+                    margin: 0;
+                    padding: 1em 0;
+                }
+                
+                #howTall {
+                    text-align: center;
+                    font-size: xx-large;
+                    font-family: 'Wavehaus Thin';
+                }
+                /*The input ting*/
+                
+                #in {
+                    text-align: center;
+                    position: relative;
+                    padding: 15px 0 0;
+                    margin-top: 10px;
+                    width: 50%;
+                }
+                
+                #heightInput {
+                    font-family: inherit;
+                    width: 100%;
+                    border: 0;
+                    border-bottom: 2px solid var(--gray);
+                    outline: 0;
+                    font-size: 1.3rem;
+                    color: var(--white);
+                    padding: 7px 0;
+                    background: transparent;
+                    transition: border-color 0.2s;
+                }
