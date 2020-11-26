@@ -26,30 +26,97 @@
 	margin: 0;
 }
 
-.div {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 100vh;
+body {
+	margin: 0;
 }
 
-#theHeading {
-	font-family: "Integral CF Heavy";
-	color: #ffffff;
+.theHeading {
+	text-align: center;
+	font-family: "Integral CF Ultrabold", sans-serif;
+	font-weight: 600;
+	background: -webkit-linear-gradient(rgb(136, 221, 154), rgb(26, 87, 180));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	font-size: 80px;
 }
 
-h4 {
-	font-family: "Wavehaus Thin";
-	font-size: 30px;
-	color: #ffffff;
+#font1H4 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 60px;
+	background: -webkit-linear-gradient(rgb(0, 255, 174), rgb(255, 230, 0));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	letter-spacing: -2px;
 }
 
-.div:nth-child(1) {
-	background-image: url(http://127.0.0.1:5500/images/joost-crop-qLCu1i6L23U-unsplash.jpg);
+#font2H4 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 60px;
+	background: -webkit-linear-gradient(rgb(0, 255, 174), rgb(255, 230, 0));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	letter-spacing: -2px;
+}
+
+#div1 {
+	background-image: url(http://127.0.0.1:5500/images/305-3057704_erg.jpg);
+	/* Set a specific height */
+	height: 100vh;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 }
-.div:nth-child(2) {
-	background: coral;
+
+#div2 {
+	background: rgb(166, 202, 224);
+	/* Set a specific height */
+	height: 100vh;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
+#div3 {
+	background-image: url("http://127.0.0.1:5500/images/desert.jpg");
+	height: 100vh;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#div3 input {
+}
+
+#div4 {
+	background: rgb(166, 202, 224);
+	height: 100vh;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#div5 {
+	background-image: url("http://127.0.0.1:5500/images/dune.jpg");
+	height: 100vh;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
