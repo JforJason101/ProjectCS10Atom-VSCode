@@ -1,11 +1,15 @@
-document.getElementById("submitInputValues").addEventListener("click", whenSubmit);
-
-// Commit and Push
-
-// scope
+// --scope--
 // var = global
 // let = local
-// scope
+// --scope--
+
+document
+	.getElementById("submitInputValues")
+	.addEventListener("click", whenSubmit);
+
+// PARALLAX
+
+// PARALLAX
 
 function whenSubmit() {
 	// HEIGHT VARS. (START)
