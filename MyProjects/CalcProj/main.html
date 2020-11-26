@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-    <meta charset="utf-8">
-    <title>The BMI Calculator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="calcContainer">
-                <div class = "div"><h1 id="theHeading">calculate your bmi.</h1></div>
-                <!------------------------------------------> <br> <!------------------------------------------>
-        <!--form id="form" action="index.html" method="post"-->
-            <div id="mainContainer">
-                <div class = "div"><h4 id="howTall">(cm) How tall are you?</h4>
-                    <input id = "centerpls" id="heightInput"/></div>
-            </div>
-                <div class = "div"><h4>(KG) How much do you weigh? You can put in a specific amount (EG: 67.17kg)</h4>
-                    <input id="weightInput"></div>
-        </div>
-        <div>
-            <button type="button" id="submitInputValues">Calculate!</button>
-        </div>
-        </form>
-        <div id="resultContainer">
-            <div id="answer"></div>
-        </div>
-        <div>
-            <div id="output"></div>
-        </div>
-        </div>
-        <script src="BMIBACK.js"></script>
-</body>
-
+	<head>
+		<meta charset="utf-8" />
+		<title>The BMI Calculator</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,200&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="div1"><h1 class="theHeading">calculate your bmi.</h1></div>
+		<!--form id="form" action="index.html" method="post"-->
+		<div id="mainContainer">
+			<div id="div2">
+				<h1 class="theHeading">height!</h1>
+			</div>
+			<div id="div3">
+				<h4 id="font1H4" id="howTall">(cm) How tall are you?</h4>
+				<input id="heightInput" />
+			</div>
+		</div>
+		<div id="div4"><h1 class="theHeading">weight!</h1></div>
+		<div id="div5">
+			<h4 id="font2H4">(KG) How much do you weigh?</h4>
+			<input id="weightInput" />
+		</div>
+		<div>
+			<button type="button" id="submitInputValues">Calculate!</button>
+		</div>
+		<!--/form-->
+		<div id="resultContainer">
+			<div id="answer"></div>
+		</div>
+		<div>
+			<div id="output"></div>
+		</div>
+		<script src="BMIBACK.js"></script>
+	</body>
 </html>

@@ -25,7 +25,34 @@
 	margin: 0;
 }
 
-.div {
+body {
+	margin: 0;
+}
+
+.theHeading {
+	font-family: "Integral CF Ultrabold", sans-serif;
+	font-weight: 600;
+	color: #ffffff;
+	font-size: 80px;
+}
+
+#font1H4 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+#font2H4 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+#div1 {
+	background-image: url(http://127.0.0.1:5500/images/joost-crop-qLCu1i6L23U-unsplash.jpg);
+	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -37,25 +64,82 @@
 	justify-content: center;
 	width: 100%;
 	height: 100vh;
+	background-attachment: fixed;
+	scroll-behavior: smooth;
 }
 
-#theHeading {
-	font-family: "Integral CF Heavy";
-	font-size: 80px;
+#div2 {
+	background: rgb(4, 27, 41);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	scroll-behavior: smooth;
 }
 
-h4 {
-	font-family: "Wavehaus Thin";
-	font-size: 30px;
-}
-
-.div:nth-child(1) {
-	/* bbackground-image: url(http://127.0.0.1:5500/images/joost-crop-qLCu1i6L23U-unsplash.jpg);
-	*/
+#div3 {
+	background-image: url("http://127.0.0.1:5500/images/stellrweb-djb1whucfBY-unsplash.jpg");
 	background-size: cover;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background-attachment: fixed;
+	scroll-behavior: smooth;
 }
 
-.div:nth-child(2) {
-	background: coral;
+#div3 input {
 }
+
+#div4 {
+	background: rgb(4, 27, 41);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	scroll-behavior: smooth;
+}
+
+#div5 {
+	background-image: url("http://127.0.0.1:5500/images/stellrweb-djb1whucfBY-unsplash.jpg");
+	background-size: cover;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background-attachment: fixed;
+	scroll-behavior: smooth;
+}
+
+#div5 input {
+}
+
 /*# sourceMappingURL=style.css.map */
