@@ -2,118 +2,184 @@
 /* variables */
 /* fonts */
 @font-face {
-	src: local("Moon 2.0 Light"),
-		url("http://127.0.0.1:5500/CalcProj/MoonFont/Moon2.0-Light.woff")
-			format("woff");
-	font-family: "Integral CF UltraBold";
-	src: local("Integral CF UltraBold"),
-		url("http://127.0.0.1:5500/IntegralFont/Webfont/IntegralCF-Heavy.woff")
-			format("woff");
+  src: local("Moon 2.0 Light"), url("http://127.0.0.1:5500/CalcProj/MoonFont/Moon2.0-Light.woff") format("woff");
+  font-family: "Integral CF UltraBold";
+  src: local("Integral CF UltraBold"), url("http://127.0.0.1:5500/IntegralFont/Webfont/IntegralCF-Heavy.woff") format("woff");
 }
 
 @font-face {
-	font-family: "Wavehaus Thin";
-	src: local("Wavehaus Thin"),
-		url("http://127.0.0.1:5500/WavehausSansFont/Web%20Font/Wavehaus-28Thin.woff")
-			format("woff");
+  font-family: "Wavehaus Thin";
+  src: local("Wavehaus Thin"), url("http://127.0.0.1:5500/WavehausSansFont/Web%20Font/Wavehaus-28Thin.woff") format("woff");
 }
 
 /* fonts */
-
 * {
-	border: 0;
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .theHeading {
-	margin: auto;
-	text-align: center;
-	font-family: "Integral CF Ultrabold", sans-serif;
-	font-weight: 600;
-	background: -webkit-linear-gradient(rgb(136, 221, 154), rgb(26, 87, 180));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-size: 80px;
+  font-family: "Integral CF Ultrabold", sans-serif;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#88dd9a, #1a57b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 90px;
 }
 
 #font1H4 {
-	font-family: "Poppins", sans-serif;
-	font-weight: 600;
-	font-size: 60px;
-	background: -webkit-linear-gradient(rgb(0, 255, 174), rgb(255, 230, 0));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	letter-spacing: -2px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  background: -webkit-linear-gradient(#00ffae, #ffe600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -2px;
+  margin-right: 2px;
 }
 
 #font2H4 {
-	font-family: "Poppins", sans-serif;
-	font-weight: 600;
-	font-size: 60px;
-	background: -webkit-linear-gradient(rgb(0, 255, 174), rgb(255, 230, 0));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	letter-spacing: -2px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  background: -webkit-linear-gradient(#00ffae, #ffe600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -2px;
+  margin-right: 2px;
 }
 
 #div1 {
-	background-image: url(http://127.0.0.1:5500/images/305-3057704_erg.jpg);
-	/* Set a specific height and weight */
-	height: 100vh;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  background-image: url(http://127.0.0.1:5500/images/305-3057704_erg.jpg);
+  /* Set a specific height and weight */
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 38vh;
 }
 
 #div2 {
-	background: rgb(166, 202, 224);
-	/* Set a specific height */
-	height: 100vh;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  background: #5ccadd;
+  /* Set a specific height */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 15vh;
+  height: 30vh;
 }
 
 #div3 {
-	background-image: url("http://127.0.0.1:5500/images/desert.jpg");
-	height: 100vh;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-#div3 input {
+  background-image: url("http://127.0.0.1:5500/images/desert.jpg");
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 30vh;
+  height: 40vh;
 }
 
 #div4 {
-	background: rgb(166, 202, 224);
-	height: 100vh;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  background: #5ccadd;
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 15vh;
+  height: 30vh;
 }
+
 #div5 {
-	background-image: url("http://127.0.0.1:5500/images/dune.jpg");
-	height: 100vh;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  background-image: url("http://127.0.0.1:5500/images/dune.jpg");
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 30vh;
+  height: 40vh;
 }
 
+#sub {
+  /* Create the parallax scrolling effect */
+  background-color: #5ccadd;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 10vh;
+  padding: 10vh;
+  text-align: center;
+}
+
+button {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: xx-large;
+  border-radius: 3em;
+  border-color: #1abc9c;
+  color: black;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(26, 188, 156, 0.6)), color-stop(5%, rgba(26, 188, 156, 0.6)), color-stop(5%, #1abc9c), color-stop(10%, #1abc9c), color-stop(10%, rgba(26, 188, 156, 0.6)), color-stop(15%, rgba(26, 188, 156, 0.6)), color-stop(15%, #1abc9c), color-stop(20%, #1abc9c), color-stop(20%, rgba(26, 188, 156, 0.6)), color-stop(25%, rgba(26, 188, 156, 0.6)), color-stop(25%, #1abc9c), color-stop(30%, #1abc9c), color-stop(30%, rgba(26, 188, 156, 0.6)), color-stop(35%, rgba(26, 188, 156, 0.6)), color-stop(35%, #1abc9c), color-stop(40%, #1abc9c), color-stop(40%, rgba(26, 188, 156, 0.6)), color-stop(45%, rgba(26, 188, 156, 0.6)), color-stop(45%, #1abc9c), color-stop(50%, #1abc9c), color-stop(50%, rgba(26, 188, 156, 0.6)), color-stop(55%, rgba(26, 188, 156, 0.6)), color-stop(55%, #1abc9c), color-stop(60%, #1abc9c), color-stop(60%, rgba(26, 188, 156, 0.6)), color-stop(65%, rgba(26, 188, 156, 0.6)), color-stop(65%, #1abc9c), color-stop(70%, #1abc9c), color-stop(70%, rgba(26, 188, 156, 0.6)), color-stop(75%, rgba(26, 188, 156, 0.6)), color-stop(75%, #1abc9c), color-stop(80%, #1abc9c), color-stop(80%, rgba(26, 188, 156, 0.6)), color-stop(85%, rgba(26, 188, 156, 0.6)), color-stop(85%, #1abc9c), color-stop(90%, #1abc9c), color-stop(90%, rgba(26, 188, 156, 0.6)), color-stop(95%, rgba(26, 188, 156, 0.6)), color-stop(95%, #1abc9c), to(#1abc9c));
+  background-image: linear-gradient(to right, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.6) 5%, #1abc9c 5%, #1abc9c 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #1abc9c 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 188, 156, 0.6) 25%, #1abc9c 25%, #1abc9c 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 35%, #1abc9c 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #1abc9c 45%, #1abc9c 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1abc9c 55%, #1abc9c 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #1abc9c 65%, #1abc9c 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #1abc9c 75%, #1abc9c 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #1abc9c 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #1abc9c 95%, #1abc9c 100%);
+  background-position: 0 0;
+  background-size: 150%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  width: 200px;
+  height: 50px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  background-position: 100px;
+}
+
+#yes {
+  background: -webkit-linear-gradient(#9dff00, #ffe600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -2px;
+}
+
+#output {
+  padding: 5vh;
+  text-align: center;
+  border-bottom: -25vh;
+  padding-top: -25vh;
+  background: -webkit-linear-gradient(#9dff00, #ffe600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -2px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+input {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+  color: black;
+  border-radius: 2rem;
+  outline: none;
+  border: 0;
+  background: rgba(255, 255, 255, 0.5);
+}
 /*# sourceMappingURL=style.css.map */

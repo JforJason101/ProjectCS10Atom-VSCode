@@ -33,12 +33,13 @@ function whenSubmit() {
 
 	let theBMI = massKilos / theHeightM;
 	let rounded = parseFloat(theBMI).toFixed(2);
-	if (rounded === NaN) {
+	let empty = "";
+	if (rounded === "NaN") {
 		console.log("1");
 		document.getElementById("output").innerHTML =
-			"The value inputted cannot be registered, retry";
+			"The value inputted cannot be registered, retry.";
 	} else {
-		console.log("2");
+		console.log("3");
 		document.getElementById("output").innerHTML = `Your BMI is ${rounded}`;
 		heightInput = "";
 		weightInput = "";
