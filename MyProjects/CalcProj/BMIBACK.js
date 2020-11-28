@@ -40,7 +40,9 @@ function whenSubmit() {
 			"The value inputted cannot be registered, retry.";
 	} else {
 		console.log("3");
-		document.getElementById("output").innerHTML = `Your BMI is ${rounded}`;
+		document.getElementById(
+			"output"
+		).innerHTML = `Your BMI is around ${rounded}`;
 		heightInput = "";
 		weightInput = "";
 	}
