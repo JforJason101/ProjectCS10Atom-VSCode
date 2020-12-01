@@ -1,21 +1,15 @@
 @font-face {
 	font-family: "Integral CF UltraBold";
 	src: local("Integral CF UltraBold"),
-		url("http://127.0.0.1:5500/IntegralFont/Webfont/IntegralCF-Heavy.woff")
-			format("woff");
+		url("IntegralFont/Webfont/IntegralCF-Heavy.woff") format("woff");
 }
 @font-face {
 	font-family: "Sailec";
-	src: local("Sailec"),
-		url("http://127.0.0.1:5500/SailecThinItalic.woff") format("woff");
-}
-
-html {
-	scroll-behavior: smooth;
+	src: local("Sailec"), url("SailecThinItalic.woff") format("woff");
 }
 
 body {
-	background-image: url("http://127.0.0.1:5500/550656.jpg");
+	background-image: url("550656.jpg");
 	background-position: center;
 	background-size: cover;
 	width: 100%;
@@ -88,20 +82,20 @@ button:hover {
 }
 
 #sub {
-	transition: all ease 0.4s;
+	transition: ease 0.4s;
 }
 
 #sub:hover {
-	transition: all ease 0.4s;
+	transition: ease 0.4s;
 }
 
 #reload {
 	margin-left: 10px;
-	transition: all ease 0.4s;
+	transition: ease 0.4s;
 }
 
 #reload:hover {
-	transition: all ease 0.4s;
+	transition: ease 0.4s;
 }
 
 #separate {
@@ -109,6 +103,14 @@ button:hover {
 	padding-bottom: 20px;
 }
 
+.ifWrong {
+	padding-top: 20px;
+	background: -webkit-linear-gradient(#39388a, #04bba2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: Poppins;
+	font-size: 20px;
+}
 input {
 	text-align: center;
 	font-family: "Poppins", sans-serif;
@@ -126,4 +128,9 @@ input {
 	background-color: rgba(229, 255, 0, 0.781);
 	border-radius: 1rem;
 	margin: auto;
+}
+
+#mark {
+	font-family: Integral CF UltraBold;
+	padding-bottom: 5px;
 }

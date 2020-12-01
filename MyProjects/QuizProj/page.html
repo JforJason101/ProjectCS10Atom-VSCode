@@ -4,7 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="main.css" />
-		<script src="index.js"></script>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,200&display=swap"
 			rel="stylesheet"
@@ -21,45 +20,43 @@
 						<h2 class="questionHeading">I</h2>
 						<p class="customizeQ">Who is Karl Marx?</p>
 						<input name="Answer" id="q1" />
-						<div id="ifWrong1"></div>
+						<div id="ifWrong1" class="ifWrong"></div>
 					</div>
 					<br />
 					<div class="ContainQ">
 						<h2 class="questionHeading">II</h2>
 						<p class="customizeQ">TASK: Say 'hi' to juan.</p>
 						<div id="separate">
-							<img
-								src="http://127.0.0.1:5500/juan.jpg"
-								alt="juan"
-								id="imageJuan"
-							/>
+							<img src="Images/juan.jpg" alt="juan" id="imageJuan" />
 						</div>
 
 						<input name="Answer" id="q2" />
-						<div id="ifWrong2"></div>
+						<div id="ifWrong2" class="ifWrong"></div>
 					</div>
 					<br />
 					<div class="ContainQ">
 						<h2 class="questionHeading">III</h2>
 						<p class="customizeQ">What is socialism?</p>
 						<input name="Answer" id="q3" />
-						<div id="ifWrong3"></div>
+						<div id="ifWrong3" class="ifWrong"></div>
 					</div>
 					<br />
 					<div class="ContainQ">
 						<h2 class="questionHeading">IIII</h2>
 						<p class="customizeQ">What does the proletarian have to lose?</p>
 						<input name="Answer" id="q4" />
-						<div id="ifWrong4"></div>
+						<div id="ifWrong4" class="ifWrong"></div>
 					</div>
-
+					<br />
+					<div id="markContainer">
+						<div id="mark" class="ifWrong"></div>
+					</div>
+					<br />
 					<button type="button" id="sub">Mark Quiz</button>
 					<button type="submit" id="reload">Retry Quiz</button>
 				</form>
-				<div id="markContainer">
-					<div id="mark"></div>
-				</div>
 			</div>
 		</div>
+		<script src="index.js"></script>
 	</body>
 </html>
