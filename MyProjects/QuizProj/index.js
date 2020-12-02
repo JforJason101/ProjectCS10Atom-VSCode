@@ -1,6 +1,5 @@
 // will give JS the 'go' to process the function below.
 document.getElementById("sub").addEventListener("click", theQs);
-
 function theQs() {
 	// Variable desc. - 'score' as it reads, is the 'score.' It will increment in the score.
 	var score = 0;
@@ -64,4 +63,8 @@ function theQs() {
 	const percent = (score / 4) * 100;
 
 	mark.innerHTML = `Well done! You receive a ${score}/4! (${percent}%)`;
+}
+// This function rickrolls the user
+function learnMore() {
+	location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
 }

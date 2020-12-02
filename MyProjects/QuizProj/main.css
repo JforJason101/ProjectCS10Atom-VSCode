@@ -117,7 +117,7 @@ button:hover {
 
 .ifWrong {
 	padding-top: 20px;
-	background: -webkit-linear-gradient(#39388a, #04bba2);
+	background: -webkit-linear-gradient(#008cff, #00ffdd);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-family: Poppins;
