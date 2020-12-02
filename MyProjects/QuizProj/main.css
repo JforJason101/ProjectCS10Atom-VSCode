@@ -9,7 +9,7 @@
 }
 
 body {
-	background-image: url("550656.jpg");
+	background-image: url("images/sascha-yeryomin-DNQ-M93tHmA-unsplash.jpg");
 	background-position: center;
 	background-size: cover;
 	width: 100%;
@@ -25,7 +25,7 @@ body::-webkit-scrollbar {
 #titlehead {
 	font-family: "Integral CF UltraBold";
 	text-align: center;
-	background: -webkit-linear-gradient(#ff0000, #ff5e00);
+	background: -webkit-linear-gradient(#ff0015, #16095e);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 65px;
@@ -46,11 +46,11 @@ br {
 }
 
 .customizeQ {
-	background: -webkit-linear-gradient(#ff5e00, #ff0000);
+	background: -webkit-linear-gradient(#d0ff00, #00edf5);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-family: Sailec;
-	font-size: 40px;
+	font-size: 35px;
 }
 
 #ButtonBOX {
@@ -62,15 +62,15 @@ button {
 	text-align: center;
 	font-family: "Integral CF UltraBold", sans-serif;
 	font-size: larger;
-	color: white;
+	color: #16095e;
 	border-radius: 2rem;
 	font-weight: 600;
 	font-size: medium;
 	border-radius: 3em;
-	background: linear-gradient(to bottom right, #ff0000f1, #ffa600ea);
+	background: linear-gradient(to bottom right, #70e4d4be, #d9ff00c0);
 	background-position: 0 0;
 	background-size: 150%;
-	width: 200px;
+	width: 150px;
 	height: 50px;
 	border: 0;
 	cursor: pointer;
@@ -101,6 +101,15 @@ button:hover {
 	transition: ease 0.4s;
 }
 
+#learnMore {
+	margin-left: 10px;
+	transition: ease 0.4s;
+}
+
+#learnMore:hover {
+	transition: ease 0.4s;
+}
+
 #separate {
 	padding-top: -10px;
 	padding-bottom: 20px;
@@ -118,17 +127,17 @@ input {
 	text-align: center;
 	font-family: "Poppins", sans-serif;
 	font-size: larger;
-	color: white;
+	color: whitesmoke;
 	border-radius: 2rem;
 	outline: none;
 	border: 0;
-	background: linear-gradient(to bottom right, #ff0000a9, #ffa600a4);
+	background: linear-gradient(to bottom right, #70e4d48c, #d9ff00a4);
 }
 
 #quizContainer {
 	width: 40rem;
 	padding: 2rem;
-	background-color: rgba(229, 255, 0, 0.781);
+	background-color: #2d768898;
 	border-radius: 1rem;
 	margin: auto;
 }
