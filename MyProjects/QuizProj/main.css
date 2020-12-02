@@ -25,7 +25,7 @@ body::-webkit-scrollbar {
 #titlehead {
 	font-family: "Integral CF UltraBold";
 	text-align: center;
-	background: -webkit-linear-gradient(#ff0015, #16095e);
+	background: linear-gradient(to bottom right, #d0ff00, #5b9c83);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 65px;
@@ -44,7 +44,10 @@ br {
 	padding-left: 10px;
 	padding-top: -10px;
 }
-
+#imageJuan {
+	border-radius: 5%;
+	border: 3px solid #d0ff00;
+}
 .customizeQ {
 	background: -webkit-linear-gradient(#d0ff00, #00edf5);
 	-webkit-background-clip: text;
@@ -137,7 +140,7 @@ input {
 #quizContainer {
 	width: 40rem;
 	padding: 2rem;
-	background-color: #2d768898;
+	background-color: #2dc5b1c2;
 	border-radius: 1rem;
 	margin: auto;
 }

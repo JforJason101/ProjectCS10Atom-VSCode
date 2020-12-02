@@ -64,7 +64,3 @@ function theQs() {
 
 	mark.innerHTML = `Well done! You receive a ${score}/4! (${percent}%)`;
 }
-// This function rickrolls the user
-function learnMore() {
-	location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-}
