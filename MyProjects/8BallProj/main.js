@@ -15,8 +15,8 @@ function randomizer() {
 		"Don't count on it.",
 		"Outlook not so good.",
 	];
-	let specifics = [
-		"HELLO THERE",
+	let specifics = "HELLO THERE";
+	let specifics2 = [
 		"REJECT MODERNITY, RETURN TO MONKE!",
 		"REJECT MODERNITY RETURN TO MONKE",
 		"REJECT MODERNITY, RETURN TO MONKE",
@@ -24,15 +24,22 @@ function randomizer() {
 	let ask = "ASK A QUESTION";
 	// VARIABLES
 
-	//
+	// Outputs
+
 	if (inputMain == "") {
 		document.getElementById("output").innerHTML = ask;
-	} else if (inputMain.toUpperCase() === specifics[0]) {
+	} else if (inputMain.toUpperCase() === specifics) {
 		document.getElementById("output").innerHTML = "Hello!";
-	} else if (inputMain.toUpperCase() === specifics[(1, 2, 3)]) {
+	} else if (inputMain.toUpperCase() === specifics2[0]) {
+		document.getElementById("output").innerHTML = "y  e  s";
+	} else if (inputMain.toUpperCase() === specifics2[1]) {
+		document.getElementById("output").innerHTML = "y  e  s";
+	} else if (inputMain.toUpperCase() === specifics2[2]) {
 		document.getElementById("output").innerHTML = "y  e  s";
 	} else {
 		let re = randomOutputs[Math.floor(Math.random() * randomOutputs.length)];
 		document.getElementById("output").innerHTML = re;
 	}
+
+	// Outputs
 }
