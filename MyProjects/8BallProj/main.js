@@ -27,9 +27,9 @@ function randomizer() {
 	//
 	if (inputMain == "") {
 		document.getElementById("output").innerHTML = ask;
-	} else if (inputMain === specifics[0].toUpperCase) {
+	} else if (inputMain.toUpperCase() === specifics[0]) {
 		document.getElementById("output").innerHTML = "Hello!";
-	} else if (inputMain === specifics[(1, 2, 3)].toUpperCase) {
+	} else if (inputMain.toUpperCase() === specifics[(1, 2, 3)]) {
 		document.getElementById("output").innerHTML = "y  e  s";
 	} else {
 		let re = randomOutputs[Math.floor(Math.random() * randomOutputs.length)];
