@@ -1,13 +1,13 @@
 // On Click:
 document.getElementById("button").addEventListener("click", randomizer);
 
-// Grab IDs:
-let inputMain = document.getElementById("inputMain");
-let output = document.getElementById("output");
-
-// The randomizer() function also includes specific inputs to have specific outputs
+// The randomizer() function also includes specific inputs to have specific outputs.
 // So, it's not all random.
 function randomizer() {
+	// Grab IDs:
+	const inputMain = document.getElementById("inputMain").value;
+
+	// VARIABLES
 	let randomOutputs = [
 		"Without a Doubt.",
 		"As I see it, yes.",
@@ -15,11 +15,24 @@ function randomizer() {
 		"Don't count on it.",
 		"Outlook not so good.",
 	];
+	let specifics = [
+		"HELLO THERE",
+		"REJECT MODERNITY, RETURN TO MONKE!",
+		"REJECT MODERNITY RETURN TO MONKE",
+		"REJECT MODERNITY, RETURN TO MONKE",
+	];
 	let ask = "ASK A QUESTION";
-	if (inputMain === "") {
-		output.innerHTML = ask;
+	// VARIABLES
+
+	//
+	if (inputMain == "") {
+		document.getElementById("output").innerHTML = ask;
+	} else if (inputMain === specifics[0].toUpperCase) {
+		document.getElementById("output").innerHTML = "Hello!";
+	} else if (inputMain === specifics[(1, 2, 3)].toUpperCase) {
+		document.getElementById("output").innerHTML = "y  e  s";
 	} else {
 		let re = randomOutputs[Math.floor(Math.random() * randomOutputs.length)];
-		output.innerHTML = re;
+		document.getElementById("output").innerHTML = re;
 	}
 }
