@@ -16,20 +16,29 @@ body {
 	background-size: cover;
 	width: 100%;
 	height: 100%;
-	padding-top: 2.5rem;
-	padding-bottom: 2.5rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 	min-height: 90vh;
 	overflow: hidden;
 }
 
 #head {
+	margin-top: 2px;
 	text-align: center;
 	font-family: "Integral CF UltraBold";
+	font-size: 60px;
+	background: -webkit-linear-gradient(#d0ff0086, #00edf58e);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 #subHead {
 	text-align: center;
 	font-family: "SailecThinItalic";
+	font-size: 20px;
+	background: -webkit-linear-gradient(#d0ff00, #00edf5);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 img {
@@ -52,6 +61,21 @@ img {
 }
 
 #output {
-	padding-top: 15px;
+	padding-top: 18px;
 	text-align: center;
+	font-family: "Integral CF UltraBold";
+	font-size: 20px;
+	background: -webkit-linear-gradient(#d0ff00, #00edf5);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+input {
+	outline: 0;
+	border: 0;
+	font-family: "SailecThinItalic";
+	font-size: 18px;
+	border-radius: 0.7rem;
+	text-align: center;
+	background: -webkit-linear-gradient(#d0ff007a, #00edf57c);
 }

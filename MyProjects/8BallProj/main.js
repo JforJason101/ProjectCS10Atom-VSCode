@@ -21,7 +21,7 @@ function randomizer() {
 		"REJECT MODERNITY RETURN TO MONKE",
 		"REJECT MODERNITY, RETURN TO MONKE",
 	];
-	let ask = "ASK A QUESTION";
+	let ask = "ASK A QUESTION YOU GOOF";
 	// VARIABLES
 
 	// Outputs
