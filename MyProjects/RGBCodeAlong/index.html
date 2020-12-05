@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>RGB!</title>
+	</head>
+	<body>
+		<h1>COLOURS --></h1>
+		<p>
+			<em>
+				RGB Parameters: <span>(red, green, blue)</span> -> these specify the
+				intensity of the colours.
+			</em>
+		</p>
+		<!-- <br /> -->
+		<p id="move">0 <em>(lowest)</em> to 255 <em>(highest)</em></p>
+		<br />
+
+		<h3>Try it!</h3>
+		<p>
+			red: <input type="number" value="255" id="redIn" /> green:
+			<input type="number" value="255" id="greenIn" /> blue:
+			<input type="number" value="0" id="blueIn" />
+		</p>
+		<p id="view"></p>
+		<button id="preview" onclick="changeColour()">Preview!</button>
+		<p>rgb(255,255,0)</p>
+		<br />
+		<p id="learn">
+			<a href="https://en.wikipedia.org/wiki/RGB_color_model" target="_blank">
+				--> Learn More!
+			</a>
+		</p>
+		<br />
+		<script src="main.js"></script>
+	</body>
+</html>

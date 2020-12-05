@@ -1,0 +1,157 @@
+@font-face {
+	font-family: "Integral CF UltraBold";
+	src: local("Integral CF UltraBold"),
+		url("IntegralFont/Webfont/IntegralCF-Heavy.woff") format("woff");
+}
+
+@font-face {
+	font-family: "SailecThinItalic";
+	src: local("SailecThinItalic"), url("SailecThinItalic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Liga Roboto Mono";
+	src: local("Liga Roboto Mono"),
+		url("LigaRobotoMono-Regular.ttf") format("ttf");
+}
+
+html {
+	background-image: linear-gradient(to right, rgb(33, 100, 102), rgb(7, 6, 71));
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	background-image: linear-gradient(
+		to right,
+		rgba(0, 255, 221, 0.493),
+		rgba(0, 255, 157, 0.397)
+	);
+	font-family: sans-serif;
+	text-align: center;
+	padding: 10px 80px;
+	width: 650px;
+	margin: 20px auto;
+	border-radius: 2rem;
+}
+
+h1 {
+	font-family: "Liga Roboto Mono";
+	font-weight: 120;
+	font-size: 50px;
+}
+
+h3 {
+	margin-top: -13px;
+	font-family: "Integral CF UltraBold";
+	font-size: 20px;
+}
+p {
+	font-family: "Liga Roboto Mono";
+	font-size: 18px;
+}
+
+#move {
+	margin-top: 10px;
+}
+
+input {
+	color: white;
+	width: 50px;
+	border: 0;
+	outline: 0;
+	border-radius: 2rem;
+	text-align: center;
+	font-family: "Liga Roboto Mono";
+	transition: width 0.4s ease-in-out;
+	font-size: 18px;
+}
+input:focus {
+	width: 20%;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+#redIn {
+	background-color: rgba(255, 38, 0, 0.842);
+}
+#greenIn {
+	background-color: rgba(18, 202, 18, 0.788);
+}
+#blueIn {
+	background-color: rgba(0, 255, 242, 0.788);
+}
+
+#view {
+	width: 280px;
+	height: 140px;
+	background-color: rgb(255, 255, 0);
+	margin: auto;
+	border-radius: 15px;
+}
+
+button {
+	margin-top: 30px;
+	text-align: center;
+	font-family: "Integral CF UltraBold", sans-serif;
+	font-size: 20px;
+	color: #000000;
+	border-radius: 2rem;
+	font-weight: 600;
+	font-size: medium;
+	border-radius: 3rem;
+	background: linear-gradient(to bottom right, #70e4d4be, #d9ff00c0);
+	background-position: 0 0;
+	background-size: 150%;
+	width: 120px;
+	height: 50px;
+	border: 0;
+	cursor: pointer;
+}
+
+button:focus {
+	outline: 0;
+}
+
+button:hover {
+	background-position: 100px;
+}
+
+button {
+	transition: ease 0.4s;
+}
+
+button:hover {
+	transition: ease 0.4s;
+}
+
+a {
+	background: linear-gradient(to bottom right, #70e4d4be, #d9ff00c0);
+	color: black;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+a:focus {
+	outline: 0;
+}
+
+a:hover {
+	background-position: 100px;
+	background: linear-gradient(to bottom right, #e4b270be, #d9ff00c0);
+	text-decoration: none;
+	color: black;
+}
+
+a {
+	transition: ease 0.4s;
+}
+
+a:hover {
+	transition: ease 0.4s;
+}
