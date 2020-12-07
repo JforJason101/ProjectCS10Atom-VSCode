@@ -40,7 +40,8 @@ body {
 h1 {
 	font-family: "Liga Roboto Mono";
 	font-weight: 120;
-	font-size: 50px;
+	font-size: 40px;
+	padding-bottom: -20px;
 }
 
 h3 {

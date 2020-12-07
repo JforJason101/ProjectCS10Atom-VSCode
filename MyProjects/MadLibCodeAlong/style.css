@@ -14,20 +14,24 @@
 	src: local("Liga Roboto Mono"),
 		url("LigaRobotoMono-Regular.ttf") format("ttf");
 }
-
-/* html {
-	background-image: linear-gradient(to right, rgb(33, 100, 102), rgb(7, 6, 71));
-} */
-
+html {
+	background-image: url("simone-hutsch-Km8L8QoJIq8-unsplash.jpg");
+	background-position: center;
+	background-size: cover;
+	/* width: 100%;
+	height: 100%; */
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+}
 body::-webkit-scrollbar {
 	display: none;
 }
 
-/* body {
+body {
 	background-image: linear-gradient(
 		to right,
-		rgba(0, 255, 221, 0.493),
-		rgba(0, 255, 157, 0.397)
+		rgba(0, 255, 221, 0.753),
+		rgba(0, 255, 157, 0.747)
 	);
 	font-family: sans-serif;
 
@@ -36,20 +40,90 @@ body::-webkit-scrollbar {
 	width: 650px;
 	margin: 20px auto;
 	border-radius: 2rem;
-} */
-/* 
-h1 {
-	font-family: "Liga Roboto Mono";
-	font-weight: 120;
-	font-size: 50px;
-} */
+}
 
-/* h3 {
-	margin-top: -13px;
+h1 {
+	font-family: "Roboto Mono";
+	font-weight: 120;
+	letter-spacing: 8px;
+	font-size: 50px;
+	font-weight: 200;
+}
+
+h2 {
 	font-family: "Integral CF UltraBold";
 	font-size: 20px;
-} */
+}
 p {
 	font-family: "Liga Roboto Mono";
 	font-size: 18px;
+}
+
+input {
+	color: white;
+	width: 100px;
+	border: 0;
+	outline: 0;
+	border-radius: 2rem;
+	text-align: center;
+	font-family: "Liga Roboto Mono";
+	transition: width 0.4s ease-in-out;
+	font-size: 18px;
+	background: linear-gradient(
+		to right,
+		rgba(12, 74, 77, 0.356),
+		rgba(6, 35, 59, 0.349)
+	);
+}
+input:focus {
+	width: 40%;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+button {
+	margin-top: 30px;
+	text-align: center;
+	font-family: "Integral CF UltraBold", sans-serif;
+	font-size: 20px;
+	color: #000000;
+	border-radius: 2rem;
+	font-weight: 600;
+	font-size: medium;
+	border-radius: 3rem;
+	background: linear-gradient(to bottom right, #70e4d4e3, #d9ff00dc);
+	background-position: 0 0;
+	background-size: 150%;
+	width: 120px;
+	height: 50px;
+	border: 0;
+	cursor: pointer;
+}
+
+button:focus {
+	outline: 0;
+}
+
+button:hover {
+	background-position: 100px;
+}
+
+button {
+	transition: ease 0.4s;
+}
+
+button:hover {
+	transition: ease 0.4s;
+}
+
+#results {
+	background: linear-gradient(
+		to right,
+		rgba(5, 80, 141, 0.493),
+		rgba(0, 242, 255, 0.459)
+	);
+	border-radius: 1rem;
 }
