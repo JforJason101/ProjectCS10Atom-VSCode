@@ -1,0 +1,55 @@
+@font-face {
+	font-family: "Integral CF UltraBold";
+	src: local("Integral CF UltraBold"),
+		url("IntegralFont/Webfont/IntegralCF-Heavy.woff") format("woff");
+}
+
+@font-face {
+	font-family: "SailecThinItalic";
+	src: local("SailecThinItalic"), url("SailecThinItalic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Liga Roboto Mono";
+	src: local("Liga Roboto Mono"),
+		url("LigaRobotoMono-Regular.ttf") format("ttf");
+}
+
+/* html {
+	background-image: linear-gradient(to right, rgb(33, 100, 102), rgb(7, 6, 71));
+} */
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+/* body {
+	background-image: linear-gradient(
+		to right,
+		rgba(0, 255, 221, 0.493),
+		rgba(0, 255, 157, 0.397)
+	);
+	font-family: sans-serif;
+
+	text-align: center;
+	padding: 10px 80px;
+	width: 650px;
+	margin: 20px auto;
+	border-radius: 2rem;
+} */
+/* 
+h1 {
+	font-family: "Liga Roboto Mono";
+	font-weight: 120;
+	font-size: 50px;
+} */
+
+/* h3 {
+	margin-top: -13px;
+	font-family: "Integral CF UltraBold";
+	font-size: 20px;
+} */
+p {
+	font-family: "Liga Roboto Mono";
+	font-size: 18px;
+}
