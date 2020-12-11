@@ -1,0 +1,42 @@
+html {
+	background: url("back.jpg") center no-repeat fixed;
+	background-size: cover;
+}
+
+body {
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 500px;
+	padding: 30px 50px;
+	margin: 25px auto;
+	border-radius: 10px;
+	text-align: center;
+	font-family: Roboto Mono;
+	font-weight: 300;
+}
+
+h1,
+h2 {
+	font-family: Roboto Mono;
+	font-weight: 300;
+}
+
+img {
+	margin: 25px 0;
+}
+
+.quote {
+	font-style: italic;
+	margin-bottom: 30px;
+}
+
+.search {
+	padding: 8px 15px;
+	background-color: #48743f;
+	color: white;
+}
+
+input {
+	padding: 3px;
+	font-size: 18px;
+	text-align: center;
+}

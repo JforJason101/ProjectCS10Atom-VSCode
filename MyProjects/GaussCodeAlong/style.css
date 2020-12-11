@@ -1,0 +1,57 @@
+@font-face {
+	font-family: "Integral CF UltraBold";
+	src: local("Integral CF UltraBold"),
+		url("IntegralFont/Webfont/IntegralCF-Heavy.woff") format("woff");
+}
+@font-face {
+	font-family: "Sailec";
+	src: local("Sailec"), url("SailecThinItalic.woff") format("woff");
+}
+
+html {
+	background: url("img/img2.jpg");
+	background-size: cover;
+	padding: 0px;
+}
+
+#center {
+	font-family: "Sailec";
+	background: rgba(255, 255, 255, 0.8);
+	width: 500px;
+	padding: 20px 75px;
+	margin-top: 50vh;
+	margin: auto;
+	border-radius: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+	font-family: "Integral CF UltraBold";
+}
+
+input {
+	width: 100px;
+	padding: 5px;
+}
+
+button {
+	padding: 5px 15px;
+	background: royalblue;
+	color: white;
+	cursor: pointer;
+}
+
+.series,
+span {
+	font-family: "Courier New", Courier, monospace;
+}
+
+.result {
+	font-size: 18px;
+	font-weight: 800;
+}
+
+span {
+	font-size: 20px;
+}
