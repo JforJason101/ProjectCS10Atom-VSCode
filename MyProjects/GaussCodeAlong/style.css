@@ -3,69 +3,195 @@
 	src: local("Integral CF UltraBold"),
 		url("IntegralFont/Webfont/IntegralCF-Heavy.woff") format("woff");
 }
+
 @font-face {
 	font-family: "Sailec";
 	src: local("Sailec"), url("SailecThinItalic.woff") format("woff");
 }
 
 html {
-	background: url("img/img5.jpg");
-	background-size: cover;
-	padding: 0px;
+	background: radial-gradient(
+		circle,
+		#40ffac,
+		#66a5f7,
+		#b6f2f6,
+		#9e76e7,
+		#00fffa,
+		#8600ff
+	);
+	background-size: 1200% 1200%;
+	animation: bg-animation 16s ease infinite;
 }
 
-p {
-	background: linear-gradient(to bottom right, #00fff2, #1000f5);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+@keyframes bg-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
+.center {
+	/* Glass Texture */
 
-.i {
-	font-family: "Integral CF UltraBold";
-	background: linear-gradient(to bottom right, #1000f5, #bebebe);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-#center {
-	font-family: "Sailec";
-	background: rgba(255, 255, 255, 0.164);
-
-	backdrop-filter: blur(20px);
-
-	width: 500px;
-	padding: 70px 75px;
+	background: rgba(172, 230, 234, 0.45);
+	-webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(8.5px);
+	-webkit-backdrop-filter: blur(10.5px);
 	border-radius: 25px;
 
-	position: absolute; /* Abstracts from the rest of the document. */
-	transform: translate(-50%, -50%);
+	/* Glass Texture */
+
+	/* General Width and Height */
+
+	width: 500px;
+	padding: 20px 55px;
+	margin: 0;
+
+	/* General Width and Height */
+
+	/* Centers in The Middle of the Page */
+
+	position: absolute;
 	top: 50%;
 	left: 50%;
-
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	text-align: center;
+
+	/* Centers in The Middle of the Page */
+}
+
+#about {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+h1 {
+	font-family: Integral CF UltraBold;
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		90deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(253, 29, 29, 1) 50%,
+		rgba(252, 176, 69, 1) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#calc {
+	font-size: 40px;
 }
 
 p {
 	font-family: "Sailec";
 	font-weight: bold;
-	color: whitesmoke;
-	backdrop-filter: blur(0px);
+	font-size: 18px;
 }
+
+#main {
+	font-size: 80px;
+	position: absolute;
+	top: 24%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -225%);
+	transform: translate(-50%, -225%);
+	text-align: center;
+	width: 1000px;
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		90deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(253, 29, 29, 1) 50%,
+		rgba(252, 176, 69, 1) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+mark {
+	background: linear-gradient(270deg, #40ffac -10%, #66a5f7 100%);
+	border-radius: 10px;
+}
+
 input {
-	width: 100px;
-	padding: 5px;
+	color: white;
+	width: 50px;
+	border: 0;
+	outline: 0;
+	border-radius: 2rem;
+	text-align: center;
+	font-family: "Liga Roboto Mono";
+	transition: width 0.4s ease-in-out;
+	font-size: 18px;
+	background: linear-gradient(270deg, #40ffac -10%, #66a5f7 100%);
+}
+input:focus {
+	width: 20%;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 button {
-	padding: 5px 15px;
-	background: royalblue;
-	color: white;
+	text-align: center;
+	border-radius: 2rem;
+	font-weight: 600;
+	font-size: medium;
+	border-radius: 3em;
+	background: radial-gradient(circle, #40ffac -10%, #66a5f7 100%);
+	background-position: 0 0;
+	background-size: 150%;
+	width: 150px;
+	height: 50px;
+	border: 0;
 	cursor: pointer;
+}
+
+#buttonText {
+	font-family: "Sailec", sans-serif;
+	font-weight: bold;
+	font-size: larger;
+
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		90deg,
+		rgb(70, 8, 112) 0%,
+		rgb(134, 12, 12) 50%,
+		rgb(139, 84, 6) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+button:focus {
+	outline: 0;
+}
+
+button:hover {
+	background-position: 100px;
+}
+
+#calc-btn {
+	transition: ease 0.4s;
+}
+
+#calc-btn:hover {
+	transition: ease 0.4s;
 }
 
 .series,
 span {
-	font-family: "Roboto Mono";
+	font-family: "Roboto Mono", Courier, monospace;
 	font-weight: normal;
+	font-size: normal;
 }
 
 .result {
@@ -76,3 +202,5 @@ span {
 span {
 	font-size: 20px;
 }
+
+/*# sourceMappingURL=style.css.map */

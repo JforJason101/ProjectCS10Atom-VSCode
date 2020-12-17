@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Integral CF UltraBold";
+  src: local("Integral CF UltraBold"), url("IntegralFont/Webfont/IntegralCF-Heavy.woff") format("woff");
+}
+@font-face {
+  font-family: "Sailec";
+  src: local("Sailec"), url("SailecThinItalic.woff") format("woff");
+}
+html {
+  background: #40ffac;
+  background: radial-gradient(circle, #40ffac 0%, #66f7ef 100%);
+  background-size: cover;
+}
+
+.center {
+  background: rgba(172, 230, 234, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border-radius: 19px;
+  width: 500px;
+  padding: 20px 75px;
+  margin: 20px auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: Integral CF UltraBold;
+}
+
+/* Input */
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+/* demo */
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+}
+
+/* Input */
+button {
+  padding: 5px 15px;
+  background: royalblue;
+  color: white;
+  cursor: pointer;
+}
+
+.series,
+span {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.result {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+span {
+  font-size: 20px;
+}

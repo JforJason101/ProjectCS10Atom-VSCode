@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+			rel="stylesheet"
+		/>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title>Gauss</title>
+		<title>The Story of Guass</title>
 		<link href="style.css" rel="stylesheet" type="text/css" />
 	</head>
 
 	<body>
-		<div id="center">
-			<h1 class="i">Story of Gauss</h1>
-			<p>
-				"I love the story of Carl Friedrich Gauss—who, as an elementary student
-				in the late 1700s, amazed his teacher with how quickly he found the sum
-				of the integers from 1 to 100 to be 5,050." (Jane M. Wilburne)
-			</p>
-			<p>
-				<img src="img/story-of-gauss.gif" />
-			</p>
+		<h1 id="main">Story of Gauss</h1>
+		<div class="container">
+			<div class="center">
+				<div id="about">
+					<p>
+						"I love the story of Carl Friedrich Gauss—who, as an elementary
+						student in the late 1700s, amazed his teacher with how quickly he
+						found the sum of the integers from 1 to 100 to be 5,050."
+						<em>(Jane M. Wilburne)</em>
+					</p>
+					<p>
+						<img id="guass" src="guass.png" />
+					</p>
 
-			<h2 class="i">
-				Calculate Sum of <br />
-				Integers 1 to n
-			</h2>
-			<p class="series">1 + 2 + 3 + ... + (n-1) + n</p>
-			<p>
-				Enter a value for n: <input id="n-in" type="number" />
-				<button id="calc-btn">Calculate Sum</button>
-			</p>
-			<p class="result">
-				Sum of 1 to <span id="n-out">?</span> is <span id="sum-out">---</span>
-			</p>
+					<h1 id="calc">Calculate Sum of Integers 1 to N</h1>
+					<p class="series">
+						1 + 2 + 3 + <mark> ‍ ‍ ‍ ‍ ‍ ‎‎‎</mark> + (n-1) + n
+					</p>
+					<p>
+						Enter a value for n: <input id="n-in" type="number" />
+						<br />
+						<br />
+						<button id="calc-btn">
+							<span id="buttonText">Calculate Sum</span>
+						</button>
+					</p>
+					<p class="result">
+						Sum of 1 to <span id="n-out">?</span> is
+						<span id="sum-out"><mark> ‍ ‍ ‍ ‍ ‍‎‎‎</mark></span>
+					</p>
+				</div>
+			</div>
 		</div>
 		<!-- Load JavaScript -->
 		<script src="script.js"></script>
