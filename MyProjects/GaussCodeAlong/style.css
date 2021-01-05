@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
 	font-family: "Integral CF UltraBold";
 	src: local("Integral CF UltraBold"),
@@ -9,6 +10,24 @@
 	src: local("Sailec"), url("SailecThinItalic.woff") format("woff");
 }
 
+/* Fonts */
+
+/* Animations  */
+@keyframes bg-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Animations  */
+
+/* Sets General Background and Animates it  */
 html {
 	background: radial-gradient(
 		circle,
@@ -22,22 +41,13 @@ html {
 	background-size: 1200% 1200%;
 	animation: bg-animation 16s ease infinite;
 }
+/* Sets General Background and Animates it  */
 
-@keyframes bg-animation {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+/* Glass Part */
 .center {
 	/* Glass Texture */
 
-	background: rgba(172, 230, 234, 0.45);
+	background: rgba(164, 236, 240, 0.45));
 	-webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(8.5px);
@@ -49,6 +59,7 @@ html {
 	/* General Width and Height */
 
 	width: 500px;
+	height: 586px;
 	padding: 20px 55px;
 	margin: 0;
 
@@ -64,13 +75,27 @@ html {
 	text-align: center;
 
 	/* Centers in The Middle of the Page */
-}
 
+	/* Adds Grain Texture */
+
+	content: "";
+
+	/* The grainy image */
+
+	background-image: url("img/noise3.png");
+
+	/* Adds Grain Texture */
+}
+/* Glass Part */
+
+/* Extends Top and Bottom Margin Inside the Glass Part */
 #about {
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
+/* Extends Top and Bottom Margin Inside the Glass Part */
 
+/* Customizes all General H1s */
 h1 {
 	font-family: Integral CF UltraBold;
 	background: rgb(131, 58, 180);
@@ -83,10 +108,13 @@ h1 {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+/* Customizes all General H1s */
 
-#calc {
+/* Makes the Font of the Second Heading Larger */
+#secondHead {
 	font-size: 40px;
 }
+/* Makes the Font of the Second Heading Larger */
 
 p {
 	font-family: "Sailec";
@@ -94,7 +122,8 @@ p {
 	font-size: 18px;
 }
 
-#main {
+/* Customizes the Main Heading  */
+#mainHeading {
 	font-size: 80px;
 	position: absolute;
 	top: 24%;
@@ -113,31 +142,49 @@ p {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+/* Customizes the Main Heading  */
 
+/* Customizes the Highlighting */
 mark {
 	background: linear-gradient(270deg, #40ffac -10%, #66a5f7 100%);
 	border-radius: 10px;
 }
+/* Customizes the Highlighting */
 
 input {
 	color: white;
 	width: 50px;
 	border: 0;
 	outline: 0;
-	border-radius: 2rem;
+	border-radius: 10px;
 	text-align: center;
 	font-family: "Liga Roboto Mono";
 	transition: width 0.4s ease-in-out;
 	font-size: 18px;
 	background: linear-gradient(270deg, #40ffac -10%, #66a5f7 100%);
 }
+
 input:focus {
 	width: 20%;
 }
+
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
+}
+
+::-webkit-scrollbar {
+	width: 12px; /* for vertical scrollbars */
+	height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.5);
 }
 
 button {
