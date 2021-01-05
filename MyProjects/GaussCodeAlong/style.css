@@ -1,253 +1,253 @@
 /* Fonts */
 @font-face {
-  font-family: "Integral CF UltraBold";
-  src: local("Integral CF UltraBold"),
-    url("IntegralFont/Webfont/IntegralCF-Heavy.woff") format("woff");
+	font-family: "Integral CF UltraBold";
+	src: local("Integral CF UltraBold"),
+		url("IntegralFont/Webfont/IntegralCF-Heavy.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Sailec";
-  src: local("Sailec"), url("SailecThinItalic.woff") format("woff");
+	font-family: "Sailec";
+	src: local("Sailec"), url("SailecThinItalic.woff") format("woff");
 }
 
 /* Fonts */
 
 /* Animations  */
 @keyframes bg-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 /* Animations  */
 
 /* Sets General Background and Animates it  */
 html {
-  background: radial-gradient(
-    circle,
-    #40ffac,
-    #66a5f7,
-    #b6f2f6,
-    #9e76e7,
-    #00fffa,
-    #8600ff
-  );
-  background-size: 1200% 1200%;
-  animation: bg-animation 16s ease infinite;
+	background: radial-gradient(
+		circle,
+		#40ffac,
+		#66a5f7,
+		#b6f2f6,
+		#9e76e7,
+		#00fffa,
+		#8600ff
+	);
+	background-size: 1200% 1200%;
+	animation: bg-animation 16s ease infinite;
 }
 /* Sets General Background and Animates it  */
 
 /* Glass Part */
 .center {
-  /* Glass Texture */
+	/* Glass Texture */
 
-  background: rgba(164, 236, 240, 0.45);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(10.5px);
-  border-radius: 25px;
+	background: rgba(164, 236, 240, 0.45);
+	-webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(8.5px);
+	-webkit-backdrop-filter: blur(10.5px);
+	border-radius: 25px;
 
-  /* Glass Texture */
+	/* Glass Texture */
 
-  /* General Width and Height */
+	/* General Width and Height */
 
-  width: 500px;
-  height: 586px;
-  padding: 20px 55px;
-  margin: 0;
+	width: 500px;
+	height: 586px;
+	padding: 20px 55px;
+	margin: 0;
 
-  /* General Width and Height */
+	/* General Width and Height */
 
-  /* Centers in The Middle of the Page */
+	/* Centers in The Middle of the Page */
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 
-  /* Centers in The Middle of the Page */
+	/* Centers in The Middle of the Page */
 
-  /* Adds Grain Texture */
+	/* Adds Grain Texture */
 
-  content: "";
+	content: "";
 
-  /* The grainy image */
+	/* The grainy image */
 
-  background-image: url("img/noise3.png");
+	background-image: url("img/noise3.png");
 
-  /* Adds Grain Texture */
+	/* Adds Grain Texture */
 }
 /* Glass Part */
 
 /* Extends Top and Bottom Margin Inside the Glass Part */
 #about {
-  margin-top: 5%;
-  margin-bottom: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 /* Extends Top and Bottom Margin Inside the Glass Part */
 
 /* Customizes all General H1s */
 h1 {
-  font-family: Integral CF UltraBold;
-  background: rgb(131, 58, 180);
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	font-family: Integral CF UltraBold;
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		90deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(253, 29, 29, 1) 50%,
+		rgba(252, 176, 69, 1) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 /* Customizes all General H1s */
 
 /* Makes the Font of the Second Heading Larger */
 #secondHead {
-  font-size: 40px;
+	font-size: 40px;
 }
 /* Makes the Font of the Second Heading Larger */
 
 p {
-  font-family: "Sailec";
-  font-weight: bold;
-  font-size: 18px;
+	font-family: "Sailec";
+	font-weight: bold;
+	font-size: 18px;
 }
 
 /* Customizes the Main Heading  */
 #mainHeading {
-  font-size: 80px;
-  position: absolute;
-  top: 24%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -225%);
-  transform: translate(-50%, -225%);
-  text-align: center;
-  width: 1000px;
-  background: rgb(131, 58, 180);
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	font-size: 80px;
+	position: absolute;
+	top: 24%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -225%);
+	transform: translate(-50%, -225%);
+	text-align: center;
+	width: 1000px;
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		90deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(253, 29, 29, 1) 50%,
+		rgba(252, 176, 69, 1) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 /* Customizes the Main Heading  */
 
 /* Customizes the Highlighting */
 mark {
-  background: linear-gradient(270deg, #40ffac -10%, #66a5f7 100%);
-  border-radius: 10px;
+	background: linear-gradient(270deg, #40ffac -10%, #66a5f7 100%);
+	border-radius: 10px;
 }
 /* Customizes the Highlighting */
 
 input {
-  color: white;
-  width: 50px;
-  border: 0;
-  outline: 0;
-  border-radius: 10px;
-  text-align: center;
-  font-family: "Liga Roboto Mono";
-  transition: width 0.4s ease-in-out;
-  font-size: 18px;
-  background: linear-gradient(270deg, #40ffac -10%, #66a5f7 100%);
+	color: white;
+	width: 50px;
+	border: 0;
+	outline: 0;
+	border-radius: 10px;
+	text-align: center;
+	font-family: "Liga Roboto Mono";
+	transition: width 0.4s ease-in-out;
+	font-size: 18px;
+	background: linear-gradient(270deg, #40ffac -10%, #66a5f7 100%);
 }
 
 input:focus {
-  width: 20%;
+	width: 20%;
 }
 
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 ::-webkit-scrollbar {
-  width: 12px; /* for vertical scrollbars */
-  height: 12px; /* for horizontal scrollbars */
+	width: 12px; /* for vertical scrollbars */
+	height: 12px; /* for horizontal scrollbars */
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.1);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 button {
-  text-align: center;
-  border-radius: 2rem;
-  font-weight: 600;
-  font-size: medium;
-  border-radius: 3em;
-  background: radial-gradient(circle, #40ffac -10%, #66a5f7 100%);
-  background-position: 0 0;
-  background-size: 150%;
-  width: 150px;
-  height: 50px;
-  border: 0;
-  cursor: pointer;
+	text-align: center;
+	border-radius: 2rem;
+	font-weight: 600;
+	font-size: medium;
+	border-radius: 3em;
+	background: radial-gradient(circle, #40ffac -10%, #66a5f7 100%);
+	background-position: 0 0;
+	background-size: 150%;
+	width: 150px;
+	height: 50px;
+	border: 0;
+	cursor: pointer;
 }
 
 #buttonText {
-  font-family: "Sailec", sans-serif;
-  font-weight: bold;
-  font-size: larger;
+	font-family: "Sailec", sans-serif;
+	font-weight: bold;
+	font-size: larger;
 
-  background: rgb(131, 58, 180);
-  background: linear-gradient(
-    90deg,
-    rgb(70, 8, 112) 0%,
-    rgb(134, 12, 12) 50%,
-    rgb(139, 84, 6) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		90deg,
+		rgb(70, 8, 112) 0%,
+		rgb(134, 12, 12) 50%,
+		rgb(139, 84, 6) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 button:focus {
-  outline: 0;
+	outline: 0;
 }
 
 button:hover {
-  background-position: 100px;
+	background-position: 100px;
 }
 
 #calc-btn {
-  transition: ease 0.4s;
+	transition: ease 0.4s;
 }
 
 #calc-btn:hover {
-  transition: ease 0.4s;
+	transition: ease 0.4s;
 }
 
 .series,
 span {
-  font-family: "Roboto Mono", Courier, monospace;
-  font-weight: normal;
-  font-size: normal;
+	font-family: "Roboto Mono", Courier, monospace;
+	font-weight: normal;
+	font-size: normal;
 }
 
 .result {
-  font-size: 18px;
-  font-weight: 800;
+	font-size: 18px;
+	font-weight: 800;
 }
 
 span {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
