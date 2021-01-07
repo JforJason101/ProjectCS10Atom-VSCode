@@ -11220,10 +11220,6 @@ video {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.font-body{
-  font-family: Inter;
-}
-
 .font-thin{
   font-weight: 100;
 }
@@ -31177,7 +31173,8 @@ video {
   font-family: Inter;
   font-weight: 800;
   letter-spacing: -0.75px;
-  font-size: 60px;
+  font-size: 6rem;
+  line-height: 1;
 }
 
 @media (min-width: 640px){
@@ -41851,10 +41848,6 @@ video {
 
   .sm\:font-mono{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
-  .sm\:font-body{
-    font-family: Inter;
   }
 
   .sm\:font-thin{
@@ -72401,10 +72394,6 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .md\:font-body{
-    font-family: Inter;
-  }
-
   .md\:font-thin{
     font-weight: 100;
   }
@@ -102947,10 +102936,6 @@ video {
 
   .lg\:font-mono{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
-  .lg\:font-body{
-    font-family: Inter;
   }
 
   .lg\:font-thin{
@@ -133497,10 +133482,6 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .xl\:font-body{
-    font-family: Inter;
-  }
-
   .xl\:font-thin{
     font-weight: 100;
   }
@@ -164043,10 +164024,6 @@ video {
 
   .\32xl\:font-mono{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
-  .\32xl\:font-body{
-    font-family: Inter;
   }
 
   .\32xl\:font-thin{
