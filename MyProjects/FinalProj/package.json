@@ -2,9 +2,9 @@
 	"name": "FinalProj",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "script.js",
 	"scripts": {
-		"build": "tailwindcss build src/style.css -o dist/style.css"
+		"buildCSS": "tailwindcss build src/style.css -o public/styles.css"
 	},
 	"keywords": [],
 	"author": "",
