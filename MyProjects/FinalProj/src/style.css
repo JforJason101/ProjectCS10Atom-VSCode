@@ -10,3 +10,13 @@
 	letter-spacing: -0.75px;
 	@apply text-8xl;
 }
+
+.spaceUP {
+	height: calc(100vh-8em);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
