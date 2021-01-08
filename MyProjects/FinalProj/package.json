@@ -4,12 +4,13 @@
 	"description": "",
 	"main": "script.js",
 	"scripts": {
-		"buildCSS": "tailwindcss build src/style.css -o public/styles.css"
+		"buildCSS": "tailwindcss build src/style.css -o dist/style.css"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"tailwindcss": "^2.0.2"
+		"tailwindcss": "^2.0.2",
+		"tailwindcss-pseudo-elements": "^1.5.1"
 	}
 }
