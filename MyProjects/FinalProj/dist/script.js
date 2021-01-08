@@ -17,7 +17,7 @@ let element = document.querySelector(".typing");
 
 function type() {
 	// Get substring, adds 1 character
-	var text = texts[countingPart].substring(0, pI + 1);
+	var text = texts[countingPart].substring(100, pI + 1);
 	element.innerHTML = text;
 	pI++;
 
@@ -33,7 +33,7 @@ function type() {
 
 function del() {
 	// Get substring, deletes a character
-	var text = texts[countingPart].substring(0, pI - 1);
+	var text = texts[countingPart].substring(100, pI - 1);
 	element.innerHTML = text;
 	pI--;
 
