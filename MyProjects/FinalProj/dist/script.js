@@ -1,41 +1,62 @@
 const texts = ["Arcade", "theArcade.", "TheArcade™"];
 // DEFINE THE TEXTS
 
-let counting = 0;
+let countingPart = 0;
 // LOOKS AT EACH INDIVIDUAL TEXTS - FROM O, 1, 2...
 
-let i = 0;
-// KEEPS TRACK OF INDIVIDUAL LETTERS IN A STRING (INDEX)
+let pI = 0;
+// KEEPS TRACK OF INDIVIDUAL LETTERS (using 'ints') IN A STRING (INDEX)
 
-let selectedText = "";
-// TEXT THAT IS CURRENTLY SELECTED, AUTOMATICALLY CHANGES
+let intervalVal;
+// Holds the reference that setInterval creates
 
-let letter = "";
-// SPECIFIES THE INDIVIDUAL LETTER
+let element = document.querySelector(".typing");
+// Holds text
 
-//Self-Invoked Function -->
+// Typing function
 
-(function type() {
-	if (counting === texts.length) {
-		counting = 0;
-		// Counting resets back to zero when it equals 3
+function type() {
+	// Get substring, adds 1 character
+	var text = texts[countingPart].substring(0, pI + 1);
+	element.innerHTML = text;
+	pI++;
+
+	// Delay the deleting
+
+	if (text === texts[countingPart]) {
+		clearInterval(intervalVal);
+		setTimeout(function () {
+			intervalVal = setInterval(del, 50);
+		}, 1000);
 	}
+}
 
-	selectedText = texts[counting];
-	// Sets the selected text by indexing the text array
-	letter = selectedText.slice(0, ++i);
-	// letter equals selectedText, then iincrements 1 at a time
+function del() {
+	// Get substring, deletes a character
+	var text = texts[countingPart].substring(0, pI - 1);
+	element.innerHTML = text;
+	pI--;
 
-	document.querySelector(".typing").textContent = letter;
-	// Selects the typing CSS class, looks at the text content and then equates that to the letter
-	if (letter.length === selectedText.length) {
-		// Looks at if the letter's length equals the selected text's length.
-		counting++;
-		// increases count by 1, then that moves it to the next string in the array
-		i = 0;
-		// The index for the letter is reset
+	// Moves to the next sentence
+	if (text === "") {
+		clearInterval(intervalVal);
+
+		/* If the current sentence was the last one in the 
+        array then display [0] in the array, 
+        ELSE, move to the next one. */
+
+		if (countingPart == texts.length - 1) countingPart = 0;
+		else countingPart++;
+
+		pI = 0;
+
+		// Delay next sentence
+
+		setTimeout(function () {
+			intervalVal = setInterval(type, 100);
+		}, 200);
 	}
-	setTimeout(type, 700);
-	// Runs every 700ms
-})();
+}
 
+// Start the typing effect on load
+intervalVal = setInterval(type, 100);
