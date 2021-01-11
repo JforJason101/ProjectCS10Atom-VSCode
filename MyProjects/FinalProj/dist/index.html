@@ -11,28 +11,6 @@
 		/>
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" href="style.css" />
-		<script>
-			document.documentElement.className = "js";
-			var supportsCssVars = function () {
-				var e,
-					t = document.createElement("style");
-				return (
-					(t.innerHTML = "root: { --tmp-var: bold; }"),
-					document.head.appendChild(t),
-					(e = !!(
-						window.CSS &&
-						window.CSS.supports &&
-						window.CSS.supports("font-weight", "var(--tmp-var)")
-					)),
-					t.parentNode.removeChild(t),
-					e
-				);
-			};
-			supportsCssVars() ||
-				alert(
-					"Please view this demo in a modern browser that supports CSS Variables."
-				);
-		</script>
 	</head>
 	<body class="demo-3">
 		<main>
@@ -45,7 +23,9 @@
 			</div>	
 			</div>
 			</div>
+			<div id="grid"></div>
 		</main>
+		
 		<script src="js/demo.js"></script>
 		<script src="js/three.min.js"></script>
 		<script src="js/perlin.js"></script>

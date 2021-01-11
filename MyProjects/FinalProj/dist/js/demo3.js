@@ -5,10 +5,11 @@ var width = canvas.offsetWidth,
 var renderer = new THREE.WebGLRenderer({
 	canvas: canvas,
 	antialias: true,
+	alpha: true,
 });
 renderer.setPixelRatio(window.devicePixelRatio > 1 ? 2 : 1);
 renderer.setSize(width, height);
-renderer.setClearColor(0x000000);
+renderer.setClearColor(0x000000, 0); //default
 
 var scene = new THREE.Scene();
 
