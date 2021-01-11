@@ -1,16 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>ARCADE!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Arcade</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Barlow:400,500,700|Poppins:600"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" href="style.css" />
+		<script>
+			document.documentElement.className = "js";
+			var supportsCssVars = function () {
+				var e,
+					t = document.createElement("style");
+				return (
+					(t.innerHTML = "root: { --tmp-var: bold; }"),
+					document.head.appendChild(t),
+					(e = !!(
+						window.CSS &&
+						window.CSS.supports &&
+						window.CSS.supports("font-weight", "var(--tmp-var)")
+					)),
+					t.parentNode.removeChild(t),
+					e
+				);
+			};
+			supportsCssVars() ||
+				alert(
+					"Please view this demo in a modern browser that supports CSS Variables."
+				);
+		</script>
 	</head>
-	<body class="bg-coolGREEN bg-cover">
-		<div class="holderDIV">
-			<h1 class="myHead2 text-green-200 text-6xl moveArrow">⟶</h1>
-			<h1 class="myHead typing text-8xl">TheArcade™</h1>
-		</div>
-		<script src="script.js"></script>
+	<body class="demo-3">
+		<main>
+			<div class="content content--fixed"></div>
+			<div class="content">
+				<canvas class="scene scene--full" id="scene"></canvas>
+				<div class="content__inner">
+				<div class="holderDIV">
+			<h1 class="myHead typing text-8xl"></h2>
+			</div>	
+			</div>
+			</div>
+		</main>
+		<script src="js/demo.js"></script>
+		<script src="js/three.min.js"></script>
+		<script src="js/perlin.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo3.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>

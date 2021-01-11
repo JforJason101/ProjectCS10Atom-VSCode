@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tacky Arcade Machine
+* source:	https://sketchfab.com/3d-models/tacky-arcade-machine-562c5aa7033449ecbec4215193abd8ae
+* author:	threedeejunkee (https://sketchfab.com/threedeejunkee)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tacky Arcade Machine" (https://sketchfab.com/3d-models/tacky-arcade-machine-562c5aa7033449ecbec4215193abd8ae) by threedeejunkee (https://sketchfab.com/threedeejunkee) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
