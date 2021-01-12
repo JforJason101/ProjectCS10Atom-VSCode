@@ -2,3 +2,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mainText {
+	@apply font-bold;
+	@apply text-xl;
+	@apply mb-2;
+	font-family: Inter;
+}
+
+.mainText2 {
+	font-family: Inter;
+	font-weight: 300;
+	@apply text-gray-700 text-base;
+	color: black;
+}
