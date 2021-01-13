@@ -93,6 +93,7 @@ main {
 }
 
 /* Canvas positions */
+
 .content__inner {
 	grid-area: 1 / 1 / 1 / 1;
 	position: relative;
@@ -103,8 +104,6 @@ main {
 	align-content: center;
 }
 
-canvas {
-}
 .scene {
 	position: absolute;
 }
@@ -121,12 +120,14 @@ canvas {
 }
 
 .scene--up {
-	height: 150vmin;
-	width: 150vmin;
+	height: 150vh;
+	width: 150vh;
 	top: -50vh;
 	left: 50%;
-	margin-left: -75vmin;
+	margin-left: -75vh;
 }
+
+/* Canvas positions */
 
 /* ANIMATIONS */
 
@@ -207,6 +208,7 @@ body {
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
 	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 #scroll {
@@ -231,6 +233,8 @@ body {
 }
 
 #centerThis {
+	justify-content: center;
 	display: flex;
 	align-items: center;
+	overflow: hidden;
 }
