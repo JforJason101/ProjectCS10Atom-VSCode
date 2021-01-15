@@ -105,19 +105,28 @@ function movePaddle(evt) {
 
 // Collision detection
 function collision(b, p) {
-	b.top = b.y - b.radius;
-	b.bottom = b.y + b.radius;
-	b.lefy - b.x - b.radius;
-	b.right = b.x + b.radius;
-
 	p.top = p.y;
 	p.bottom = p.y + p.height;
 	p.left = p.x;
 	p.right = p.x + p.width;
 
-	return (
-		b.right > p.left && b.bottom > p.top && b.left < p.right && b.top < p.bottom
-	);
+	b.top = b.y - b.radius;
+	b.bottom = b.y + b.radius;
+	b.left = b.x - b.radius;
+	b.right = b.x + b.radius;
+
+	// prettier-ignore
+	return p.left < b.right && p.top < b.bottom && p.right > b.left && p.bottom > b.top;
+}
+
+// Reset The Ball
+
+function resetBall() {
+	ball.x = cvs.width / 2;
+	ball.y = cvs.height / 2;
+
+	ball.speed = 5;
+	ball.velocityX = -ball.velocityX;
 }
 
 // Update : position, move, score
@@ -125,35 +134,45 @@ function update() {
 	ball.x += ball.velocityX;
 	ball.y += ball.velocityY;
 
-	// AI to control the computer
-	let comLevel = 0.1;
-	com.y = (ball.y - (com.y + com.height / 2)) * comLevel;
+	// Simple AI
 
-	if (ball.y + ball.radius > cvs.height || ball.y - ball.radius < 0) {
-		ball.velocityY = -ball.velocityX;
+	// prettier-ignore
+	com.y += (ball.y - (com.y + com.height / 2)) * 0.1;
+
+	if (ball.y - ball.radius < 0 || ball.y + ball.radius > cvs.height) {
+		ball.velocityY = -ball.velocityY;
 	}
-
-	let player = ball.x < cvs.width / 2 ? user : com;
+	// prettier-ignore
+	let player = (ball.x < cvs.width / 2) ? user : com;
 
 	if (collision(ball, player)) {
 		// where the ball hits the player
-		let collidePoint = ball.y - (player.y + player.height / 2);
-
+		// prettier-ignore
+		let collidePoint = (ball.y - (player.y + player.height / 2));
 		// normalize
-
 		collidePoint = collidePoint / (player.height / 2);
-
 		// calculate the angle in Radians
-		let angleRad = (collidePoint * Math.PI) / 4;
-
+		// prettier-ignore
+		let angleRad = (Math.PI/4) * collidePoint;
 		// X direction of the ball when it's hit
-		let direction = ball.x < cvs.width / 2 ? 1 : -1;
+		// prettier-ignore
+		let direction = ball.x + ball.radius < cvs.width / 2 ? 1 : -1;
 		// change the velocity of x and y
 		ball.velocityX = direction * ball.speed * Math.cos(angleRad);
 		ball.velocityY = ball.speed * Math.sin(angleRad);
-
 		// increase speed every hit
-		ball.speed += 0.1;
+		ball.speed += 0.5;
+	}
+
+	// update the score
+	if (ball.x - ball.radius < 0) {
+		// com win
+		com.score++;
+		resetBall();
+	} else if (ball.x + ball.radius > cvs.width) {
+		// user win
+		user.score++;
+		resetBall();
 	}
 }
 
