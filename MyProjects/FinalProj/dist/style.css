@@ -31175,7 +31175,7 @@ video {
   line-height: 1.75rem;
   margin-bottom: 0.5rem;
   font-family: Inter;
-  color: white;
+  color: black;
 }
 
 .mainText2 {
@@ -31183,7 +31183,7 @@ video {
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: white;
+  color: black;
 }
 
 @media (min-width: 640px){

@@ -8,12 +8,12 @@
 	@apply text-xl;
 	@apply mb-2;
 	font-family: Inter;
-	color: white;
+	color: black;
 }
 
 .mainText2 {
 	font-family: Inter;
 	font-weight: 300;
 	@apply text-base;
-	color: white;
+	color: black;
 }

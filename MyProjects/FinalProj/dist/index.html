@@ -20,7 +20,7 @@
 				<canvas class="scene scene--full" id="scene"></canvas>
 				<div class="content__inner">
 					<div class="holderDIV">
-						<h1 class="myHead typing text-8xl"></h1>
+						<h1 data-tilt class="myHead typing text-8xl"></h1>
 					</div>
 				</div>
 			</div>
@@ -31,51 +31,62 @@
 			<br />
 		</main>
 		<div id="centerThis">
-			<div class="p-10">
-				<!--Card 1-->
-				<div class="bg-grid max-w-sm overflow-hidden shadow-lg">
-					<img class="w-full" src="css/81296.jpg" alt="Mountain" />
-					<div class="px-6 py-4">
-						<div class="mainText">Mountain</div>
-						<p class="mainText2">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Voluptatibus quia, nulla! Maiores et perferendis eaque,
-							exercitationem praesentium nihil.
-						</p>
-						<br />
+			<span data-tilt>
+				<a href="pong/pong.html">
+					<div class="p-10">
+						<!--Card 1-->
+						<div class="bg-grid max-w-sm overflow-hidden shadow-lg">
+							<img class="w-full" src="css/pong.png" alt="Mountain" />
+							<div class="px-6 py-4">
+								<div class="mainText">Pong</div>
+								<p class="mainText2">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Voluptatibus quia, nulla! Maiores et perferendis eaque,
+									exercitationem praesentium nihil.
+								</p>
+								<br />
+							</div>
+						</div>
+					</div>
+				</a>
+			</span>
+			<span data-tilt>
+				<a href="snake/snake.html">
+					<div class="p-10">
+						<!--Card 2-->
+						<div class="bg-grid max-w-sm overflow-hidden shadow-lg">
+							<img class="w-full" src="css/snake.png" alt="Mountain" />
+							<div class="px-6 py-4">
+								<div class="mainText">Snake</div>
+								<p class="mainText2">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Voluptatibus quia, nulla! Maiores et perferendis eaque,
+									exercitationem praesentium nihil.
+								</p>
+								<br />
+							</div>
+						</div>
+					</div>
+				</a>
+			</span>
+			<span data-tilt>
+				<div class="p-10">
+					<!--Card 3-->
+					<div class="bg-grid max-w-sm overflow-hidden shadow-lg">
+						<img class="w-full" src="css/81296.jpg" alt="Mountain" />
+						<div class="px-6 py-4">
+							<div class="mainText">Mountain</div>
+							<p class="mainText2">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Voluptatibus quia, nulla! Maiores et perferendis eaque,
+								exercitationem praesentium nihil.
+							</p>
+
+							<br />
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="p-10">
-				<!--Card 2-->
-				<div class="bg-grid max-w-sm overflow-hidden shadow-lg">
-					<img class="w-full" src="css/81296.jpg" alt="Mountain" />
-					<div class="px-6 py-4">
-						<div class="mainText">Mountain</div>
-						<p class="mainText2">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Voluptatibus quia, nulla! Maiores et perferendis eaque,
-							exercitationem praesentium nihil.
-						</p>
-						<br />
-					</div>
-				</div>
-			</div>
-			<div class="p-10">
-				<!--Card 3-->
-				<div class="bg-grid max-w-sm overflow-hidden shadow-lg">
-					<img class="w-full" src="css/81296.jpg" alt="Mountain" />
-					<div class="px-6 py-4">
-						<div class="mainText">Mountain</div>
-						<p class="mainText2">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Voluptatibus quia, nulla! Maiores et perferendis eaque,
-							exercitationem praesentium nihil.
-						</p>
-						<br />
-					</div>
-				</div>
-			</div>
+			</span>
 		</div>
 		<br />
 		<br />
@@ -100,5 +111,7 @@
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/demo3.js"></script>
 		<script src="js/script.js"></script>
+		<script src="js/tilt.jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 	</body>
 </html>
