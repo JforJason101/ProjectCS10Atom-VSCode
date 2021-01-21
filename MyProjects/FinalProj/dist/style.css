@@ -31170,17 +31170,16 @@ video {
 }
 
 .mainText {
-  font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin-bottom: 0.5rem;
-  font-family: Inter;
+  font-family: SF Mono;
   color: black;
 }
 
 .mainText2 {
   font-family: Inter;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 1rem;
   line-height: 1.5rem;
   color: black;

@@ -13,6 +13,11 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body class="demo-3">
+		<nav>
+			<span data-tilt>
+				<h4>ARCADE™</h4>
+			</span>
+		</nav>
 		<div id="scroll"></div>
 		<main>
 			<div class="content content--fixed"></div>
@@ -38,7 +43,7 @@
 						<div class="bg-grid max-w-sm overflow-hidden shadow-lg">
 							<img class="w-full" src="css/pong.png" alt="Mountain" />
 							<div class="px-6 py-4">
-								<div class="mainText">Pong</div>
+								<div class="mainText"><mark>Pong</mark></div>
 								<p class="mainText2">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 									Voluptatibus quia, nulla! Maiores et perferendis eaque,
@@ -57,7 +62,7 @@
 						<div class="bg-grid max-w-sm overflow-hidden shadow-lg">
 							<img class="w-full" src="css/snake.png" alt="Mountain" />
 							<div class="px-6 py-4">
-								<div class="mainText">Snake</div>
+								<div class="mainText"><mark>Snake</mark></div>
 								<p class="mainText2">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 									Voluptatibus quia, nulla! Maiores et perferendis eaque,
@@ -75,13 +80,12 @@
 					<div class="bg-grid max-w-sm overflow-hidden shadow-lg">
 						<img class="w-full" src="css/81296.jpg" alt="Mountain" />
 						<div class="px-6 py-4">
-							<div class="mainText">Mountain</div>
+							<div class="mainText"><mark>Mountain</mark></div>
 							<p class="mainText2">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 								Voluptatibus quia, nulla! Maiores et perferendis eaque,
 								exercitationem praesentium nihil.
 							</p>
-
 							<br />
 						</div>
 					</div>
@@ -96,22 +100,12 @@
 		<br />
 		<br />
 		<br />
-		<br />
-		<script>
-			let progress = document.getElementById("scroll");
-			let totalHeight = document.body.scrollHeight - window.innerHeight;
-			window.onscroll = function () {
-				let progressHeight = (window.pageYOffset / totalHeight) * 100;
-				progress.style.height = progressHeight + "%";
-			};
-		</script>
 		<script src="js/demo.js"></script>
 		<script src="js/three.min.js"></script>
 		<script src="js/perlin.js"></script>
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/demo3.js"></script>
 		<script src="js/script.js"></script>
-		<script src="js/tilt.jquery.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 	</body>
 </html>

@@ -1,4 +1,4 @@
-const texts = ["Welcome To The Arcade™", "Arcade", "TheArcade."];
+const texts = ["Welcome To The ARCADE™", "Arcade", "TheArcade."];
 // DEFINE THE TEXTS
 
 let countingPart = 0;
@@ -26,7 +26,7 @@ function type() {
 	if (text === texts[countingPart]) {
 		clearInterval(intervalVal);
 		setTimeout(function () {
-			intervalVal = setInterval(del, 150);
+			intervalVal = setInterval(del, 250);
 		}, 1000);
 	}
 }
