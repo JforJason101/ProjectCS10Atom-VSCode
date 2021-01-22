@@ -1,0 +1,217 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "SF Mono";
+	font-weight: 200;
+}
+
+html {
+	background: linear-gradient(
+		90deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(253, 29, 29, 1) 50%,
+		rgba(252, 176, 69, 1) 100%
+	);
+	background-size: 1200% 1200%;
+	animation: bg-animation 30s ease infinite;
+}
+
+@keyframes bg-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.glass {
+	/* Glass Texture */
+
+	background: rgba(255, 255, 255, 0.45);
+	-webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(8.5px);
+	-webkit-backdrop-filter: blur(10.5px);
+	border-radius: 25px;
+
+	/* Glass Texture */
+
+	/* General Width and Height */
+
+	width: 700px;
+	height: 786px;
+	padding: 20px 55px;
+	margin: 0;
+
+	/* General Width and Height */
+
+	/* Centers in The Middle of the Page */
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+	/* Centers in The Middle of the Page */
+
+	/* Adds Grain Texture */
+
+	content: "";
+
+	/* The grainy image */
+
+	background-image: url("img/noise3.png");
+
+	/* Adds Grain Texture */
+}
+section {
+	height: 100vh;
+	font-family: sans-serif;
+}
+
+.score {
+	color: rgb(224, 224, 224);
+	height: 20vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.score h2 {
+	font-size: 30px;
+}
+.score p {
+	text-align: center;
+	padding: 10px;
+	font-size: 25px;
+}
+
+.intro {
+	color: rgb(224, 224, 224);
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	transition: opacity 0.5s ease;
+}
+
+.intro h1 {
+	font-size: 50px;
+}
+.intro button,
+.match button {
+	width: 150px;
+	height: 50px;
+	background: none;
+	border: none;
+	color: rgb(224, 224, 224);
+	font-size: 20px;
+	background: rgb(45, 117, 96);
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.match {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: opacity 0.5s ease 0.5s;
+}
+.winner {
+	color: rgb(224, 224, 224);
+	text-align: center;
+	font-size: 50px;
+}
+
+.hands,
+.options {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.player-hand {
+	margin-top: 200px;
+	transform: rotateY(180deg);
+}
+
+.computer-hand {
+	margin-top: 200px;
+}
+div.fadeOut {
+	opacity: 0;
+	pointer-events: none;
+}
+
+div.fadeIn {
+	opacity: 1;
+	pointer-events: all;
+}
+
+@keyframes shakePlayer {
+	0% {
+		transform: rotateY(180deg) translateY(0px);
+	}
+	15% {
+		transform: rotateY(180deg) translateY(-50px);
+	}
+	25% {
+		transform: rotateY(180deg) translateY(0px);
+	}
+	35% {
+		transform: rotateY(180deg) translateY(-50px);
+	}
+	50% {
+		transform: rotateY(180deg) translateY(0px);
+	}
+	65% {
+		transform: rotateY(180deg) translateY(-50px);
+	}
+	75% {
+		transform: rotateY(180deg) translateY(0px);
+	}
+	85% {
+		transform: rotateY(180deg) translateY(-50px);
+	}
+	100% {
+		transform: rotateY(180deg) translateY(0px);
+	}
+}
+
+@keyframes shakeComputer {
+	0% {
+		transform: translateY(0px);
+	}
+	15% {
+		transform: translateY(-50px);
+	}
+	25% {
+		transform: translateY(0px);
+	}
+	35% {
+		transform: translateY(-50px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	65% {
+		transform: translateY(-50px);
+	}
+	75% {
+		transform: translateY(0px);
+	}
+	85% {
+		transform: translateY(-50px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
