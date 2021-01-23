@@ -19,10 +19,7 @@ video {
 }
 
 ::selection {
-	background: #82d1cb; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-	background: #82d1cb; /* Gecko Browsers */
+	background: #82d1cb;
 }
 
 html {
@@ -238,10 +235,14 @@ body {
 }
 
 #centerThis {
-	justify-content: center;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+}
+
+#filler {
+	height: 15vh;
 }
 
 nav {

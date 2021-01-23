@@ -2,19 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "SF Mono";
-	font-weight: 200;
-}
-
-html {
-	background: linear-gradient(
-		90deg,
-		rgba(131, 58, 180, 1) 0%,
-		rgba(253, 29, 29, 1) 50%,
-		rgba(252, 176, 69, 1) 100%
-	);
-	background-size: 1200% 1200%;
-	animation: bg-animation 30s ease infinite;
+	font-family: "Inter";
+	font-weight: 750;
 }
 
 @keyframes bg-animation {
@@ -29,10 +18,34 @@ html {
 	}
 }
 
+#mainHeading {
+	font-size: 80px;
+	position: absolute;
+	top: 30.5%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -225%);
+	transform: translate(-50%, -225%);
+	text-align: center;
+	width: 1000px;
+	color: black;
+}
+
+section {
+	background: linear-gradient(
+		90deg,
+		rgb(241, 220, 22) 0%,
+		#ff8800 50%,
+		rgba(253, 29, 29, 1) 100%
+	);
+	background-size: 1200% 1200%;
+	animation: bg-animation 30s ease infinite;
+	height: 100vh;
+}
+
 .glass {
 	/* Glass Texture */
 
-	background: rgba(255, 255, 255, 0.45);
+	background: rgba(255, 255, 255, 0.35);
 	-webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(8.5px);
@@ -44,7 +57,7 @@ html {
 	/* General Width and Height */
 
 	width: 700px;
-	height: 786px;
+	height: 600px;
 	padding: 20px 55px;
 	margin: 0;
 
@@ -60,24 +73,15 @@ html {
 	text-align: center;
 
 	/* Centers in The Middle of the Page */
-
-	/* Adds Grain Texture */
-
-	content: "";
-
-	/* The grainy image */
-
-	background-image: url("img/noise3.png");
-
-	/* Adds Grain Texture */
 }
-section {
-	height: 100vh;
-	font-family: sans-serif;
+
+.player-score,
+.computer-score {
+	margin-top: -40px;
 }
 
 .score {
-	color: rgb(224, 224, 224);
+	color: black;
 	height: 20vh;
 	display: flex;
 	justify-content: space-around;
@@ -93,7 +97,7 @@ section {
 }
 
 .intro {
-	color: rgb(224, 224, 224);
+	color: black;
 	height: 50vh;
 	display: flex;
 	flex-direction: column;
@@ -107,15 +111,41 @@ section {
 }
 .intro button,
 .match button {
+	text-align: center;
+	border-radius: 2rem;
+	font-weight: 600;
+	font-size: medium;
+	border-radius: 3em;
+	background: radial-gradient(circle, #40ffac -10%, #66a5f7 100%);
+	background-position: 0 0;
+	background-size: 150%;
 	width: 150px;
 	height: 50px;
-	background: none;
-	border: none;
-	color: rgb(224, 224, 224);
-	font-size: 20px;
-	background: rgb(45, 117, 96);
-	border-radius: 3px;
+	border: 0;
 	cursor: pointer;
+	font-size: 22px;
+	letter-spacing: -0.5px;
+	font-weight: 700;
+}
+
+.intro button:focus,
+.match button:focus {
+	outline: 0;
+}
+
+.intro button:hover,
+.match button:hover {
+	background-position: 100px;
+}
+
+.intro button,
+.match button {
+	transition: ease 0.4s;
+}
+
+.intro button:hover,
+.match button:hover {
+	transition: ease 0.4s;
 }
 
 .match {
@@ -126,9 +156,10 @@ section {
 	transition: opacity 0.5s ease 0.5s;
 }
 .winner {
-	color: rgb(224, 224, 224);
+	color: black;
 	text-align: center;
 	font-size: 50px;
+	margin-top: 100px;
 }
 
 .hands,
@@ -139,13 +170,9 @@ section {
 }
 
 .player-hand {
-	margin-top: 200px;
 	transform: rotateY(180deg);
 }
 
-.computer-hand {
-	margin-top: 200px;
-}
 div.fadeOut {
 	opacity: 0;
 	pointer-events: none;

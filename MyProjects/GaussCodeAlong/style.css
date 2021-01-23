@@ -126,7 +126,7 @@ p {
 #mainHeading {
 	font-size: 80px;
 	position: absolute;
-	top: 24%;
+	top: 44%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -225%);
 	transform: translate(-50%, -225%);
