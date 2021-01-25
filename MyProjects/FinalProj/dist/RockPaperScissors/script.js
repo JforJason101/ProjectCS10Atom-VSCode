@@ -1,4 +1,6 @@
 const game = () => {
+	// Shorthanding to self-contain the code so that there's no global variable, keeps it simple.
+	// Makes game a function
 	let pScore = 0; // Set the initial scores to zero and output this initially
 	let cScore = 0;
 
@@ -21,8 +23,9 @@ const game = () => {
 		const hands = document.querySelectorAll(".hands img");
 
 		hands.forEach((hand) => {
+			//shorthand the loop
 			hand.addEventListener("animationend", function () {
-				this.style.animation = "";
+				this.style.animation = ""; // we put a reg. function here because if we don't it won't be bound to hand
 			});
 		});
 
@@ -36,7 +39,7 @@ const game = () => {
 				const computerChoice = computerOptions[computerNumber];
 
 				setTimeout(() => {
-					//Here is where we call compare hands
+					//Compare hands
 					compareHands(this.textContent, computerChoice);
 					//Update Images
 					playerHand.src = `./assets/${this.textContent}.png`;
