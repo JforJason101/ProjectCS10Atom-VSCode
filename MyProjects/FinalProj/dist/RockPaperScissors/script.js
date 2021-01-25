@@ -11,7 +11,7 @@ const game = () => {
 		const match = document.querySelector(".match");
 
 		playBtn.addEventListener("click", () => {
-			introScreen.classList.add("fadeOut");
+			introScreen.classList.add("fadeOut"); // gets the classList, puts it into a read-only file, then passes a css class to it.
 			match.classList.add("fadeIn");
 		});
 	};
@@ -25,7 +25,8 @@ const game = () => {
 		hands.forEach((hand) => {
 			//shorthand the loop
 			hand.addEventListener("animationend", function () {
-				this.style.animation = ""; // we put a reg. function here because if we don't it won't be bound to hand
+				this.style.animation = ""; // makes the animation empty when animation ends
+				// we put a reg. function here because if we don't it won't be bound to hand
 			});
 		});
 
@@ -35,7 +36,7 @@ const game = () => {
 		options.forEach((option) => {
 			option.addEventListener("click", function () {
 				//Computer Choice
-				const computerNumber = Math.floor(Math.random() * 3);
+				const computerNumber = Math.floor(Math.random() * 3); // anywhere in between 0 and 3, then floors it.
 				const computerChoice = computerOptions[computerNumber];
 
 				setTimeout(() => {
