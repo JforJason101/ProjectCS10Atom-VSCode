@@ -1,10 +1,10 @@
 const game = () => {
-	let pScore = 0;
+	let pScore = 0; // Set the initial scores to zero and output this initially
 	let cScore = 0;
 
-	//Start the Game
+	// This holds the variables to Start The game
 	const startGame = () => {
-		const playBtn = document.querySelector(".intro button");
+		const playBtn = document.querySelector(".intro button"); // Selects Queries
 		const introScreen = document.querySelector(".intro");
 		const match = document.querySelector(".match");
 
@@ -13,7 +13,7 @@ const game = () => {
 			match.classList.add("fadeIn");
 		});
 	};
-	//Play Match
+	// This holds the variables to Play a Match
 	const playMatch = () => {
 		const options = document.querySelectorAll(".options button");
 		const playerHand = document.querySelector(".player-hand");
@@ -25,6 +25,7 @@ const game = () => {
 				this.style.animation = "";
 			});
 		});
+
 		//Computer Options
 		const computerOptions = ["rock", "paper", "scissors"];
 
